@@ -9,6 +9,9 @@ public class TestPrint {
         System.out.println("The sum of 2 and 3 = " + (2+3));
         int result = 2 + 3;
         System.out.println("The sum of 2 and 3 = " + result);
-    }
+
+        GitTest.GitTestPrint();
+
+        }
 }
 
