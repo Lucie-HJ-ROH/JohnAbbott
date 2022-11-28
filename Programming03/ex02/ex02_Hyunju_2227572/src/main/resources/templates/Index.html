@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body class="container text-center">
+<form action="#" th:action="@{/save}" th:object="${user}" method="post">
+
+        <!--            <label class="col-4 col-form-label">Name: </label>-->
+        <!--            <div class="col-8">-->
+        <!--                <input type="text" field="*{name}" name="name"-->
+        <!--                       class="form-control"-->
+        <!--                       required minlength="2" maxlength="20"/>-->
+        <!--                &lt;!&ndash;                    <p th:if="${#fields.hasErrors('name')}" th:errorclass="error" th:errors="*{user.name}"/>&ndash;&gt;-->
+        <!--            </div>-->
+        <!--            <div class="form-group row">-->
+        <!--                <label class="col-4 col-form-label">E-mail: </label>-->
+        <!--                <div class="col-8">-->
+        <!--                    <input type="email" field="*{email}" name="email" class="form-control"-->
+        <!--                           required/>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="form-group row">-->
+        <!--                <label class="col-4 col-form-label">Password: </label>-->
+        <!--                <div class="col-8">-->
+        <!--                    <input type="password" field="*{password}" name="password" class="formcontrol"-->
+        <!--                           required minlength="6" maxlength="10"/>-->
+
+        <!--                </div>-->
+        <!--                <div>-->
+        <!--                    <button type="submit" class="btn btn-primary">Sign Up</button>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+
+        <table align="center" cellpadding="10">
+            <tr>
+                <td colspan="2" align="center"><h1>Student Registration Form</h1>
+                </td>
+            </tr>
+
+            <!----- Name ---------------------------------------------------------->
+            <tr>
+                <td>Name</td>
+                <td> <input type="text" th:field=="*{name}" name="name"
+                                           class="form-control"
+                                           required minlength="2" maxlength="20"/>
+<!--                    <span th:if="${#fields.hasErrors('name')}" th:errorclass="error" th:errors="*{user.name}"/>-->
+                </td>
+            </tr>
+            <!----- Password ---------------------------------------------------------->
+            <tr>
+                <td>Password</td>
+                <td><input type="text" th:field="*{user.password}" name="password" maxlength="30"/>
+<!--                    <span th:if="${#fields.hasErrors('password')}" th:errorclass="error" th:errors="*{user.password}"/>-->
+                </td>
+            </tr>
+            <!----- Retype Password ---------------------------------------------------------->
+            <tr>
+                <td>Retype Password</td>
+                <td><input type="text" th:field="*{user.rePassword}" name="rePassword" maxlength="30"/>
+<!--                    <span th:if="${#fields.hasErrors('rePassword')}" th:errorclass="error" th:errors="*{user.rePassword}"/>-->
+                </td>
+            </tr>
+
+
+            <!----- Phone Number ---------------------------------------------------------->
+            <tr>
+                <td>Phone NUMBER</td>
+                <td><input type="text" th:field="*{user.phoneNumber}" name="phoneNumber" maxlength="30"/>
+<!--                    <span th:if="${#fields.hasErrors('phoneNumber')}" th:errorclass="error" th:errors="*{user.phoneNumber}"/>-->
+                </td>
+            </tr>
+
+
+            <!----- Email ---------------------------------------------------------->
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" th:field="*{user.email}" name="email" maxlength="50"/>
+<!--                    <span th:if="${#fields.hasErrors('email')}" th:errorclass="error" th:errors="*{user.email}"/>-->
+                </td>
+            </tr>
+
+
+            <!----- Gender ---------------
+            -------------------------------------------->
+            <tr>
+                <td>Gender</td>
+                <td>
+                     <input type="radio" th:field="*{user.gender}" name="gender" value="Male" />Male
+                     <input type="radio" th:field="*{user.gender}" name="gender" value="Female"/>Female
+                     <input type="radio" th:field="*{user.gender}" name="gender" value="Other"/>Other
+<!--                    <span th:if="${#fields.hasErrors('gender')}" th:errorclass="error" th:errors="*{user.gender}"/>-->
+                </td>
+            </tr>
+
+
+
+            <!----- Date Of Birth -------------------------------------------------------->
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="birthdate" th:field="*{user.birthdate}" required />>
+<!--                    <span th:if="${#fields.hasErrors('birthdate')}" th:errorclass="error" th:errors="*{user.birthdate}"/>-->
+                </td>
+            </tr>
+
+            <!----- Address ---------------------------------------------------------->
+            <tr>
+                <td>ADDRESS <br/><br/><br/></td>
+                <td><textarea name="address" th:field="*{user.address}" rows="4" cols="30"></textarea>
+<!--                    <span th:if="${#fields.hasErrors('address')}" th:errorclass="error" th:errors="*{user.address}"/></td>-->
+            </tr>
+
+            <!----- Blood Group ---------------------------------------------------------->
+            <tr>
+                <td>Blood Group</td>
+                <td>
+                    <select field="*{bloodGroup}" name  = "bloodGroup">
+                        <option th:each="p : ${listBloodGroup}" th:value="${p}" th:text="${p}" />
+                    </select>
+<!--                    <span th:if="${#fields.hasErrors('bloodGroup')}" th:errorclass="error" th:errors="*{user.bloodGroup}"/>-->
+<!--                    <select th:field="*{user.bloodGroup}">-->
+<!--                        <option th:each="p : ${listBloodGroup}" th:value="${p}" th:text="${p}" />-->
+<!--                    </select>-->
+
+                </td>
+            </tr>
+
+
+            <!----- Department ----------------------------------------------------------->
+            <tr>
+                <td>Department</td>
+                <td>
+                    <input type="radio" th:field="*{user.department}" name="department" value="CSE" />CSE
+                    <input type="radio" th:field="*{user.department}" name="department" value="EEE"/>EEE
+                    <input type="radio" th:field="*{user.department}" name="department" value="BBA"/>BBA
+<!--                    <span th:if="${#fields.hasErrors('department')}" th:errorclass="error" th:errors="*{user.department}"/>-->
+                </td>
+            </tr>
+
+            <!----- Course ----------------------------------------------------------->
+            <tr>
+                <td>Course</td>
+                <td>
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="C" />C
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="C+"/>C+
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="Java"/>Java
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="AI" />AI
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="Marchine Learning+"/>Machine Learning
+                    <input type="checkbox" th:field="*{user.course}" name="course" value="Robotics"/>Robotics
+<!--                    <span th:if="${#fields.hasErrors('course')}" th:errorclass="error" th:errors="*{user.course}"/>-->
+                </td>
+            </tr>
+
+
+
+
+            <!----- Submit and Reset ------------------------------------------------->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+
+</form>
+</body>
+</html>
+
