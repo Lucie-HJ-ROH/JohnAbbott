@@ -1,0 +1,5 @@
+Employee name is   Kim, ID is 1000, hiredDate is Date{month=12, day=20, year=2001},  position is manager
+Employee name is   Kim, ID is 1001, hiredDate is Date{month=1, day=1, year=1900},  position is step
+Employee name is   Kim, ID is 1002, hiredDate is Date{month=1, day=1, year=1900},  position is marketer
+Employee name is   Kim, ID is 1003, hiredDate is Date{month=1, day=1, year=1900},  position is junior
+Employee name is   Kim, ID is 1004, hiredDate is Date{month=11, day=11, year=2011},  position is senior

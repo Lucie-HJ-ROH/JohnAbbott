@@ -1,0 +1,47 @@
+copied first array object Display copied array below.
+[Airplane]
+This Airplane is manufactured by Asiana. The horse power is  100.  The price of this airplane is 1000.0$
+[Airplane]
+This Airplane is manufactured by Korean Air. The horse power is  2000.  The price of this airplane is 1500.0$
+[Airplane]
+This Airplane is manufactured by Korean Air. The horse power is  2000.  The price of this airplane is 1500.0$
+[Helicopter]
+This Helicopter is manufactured by Asiana. The horse power is  100.
+The price of this helicopter is 1000.0$. This helicopter has 5 cylinders and It was made in 2013. It can carry to 6 passengers. 
+[Helicopter]
+This Helicopter is manufactured by Heli Coli. The horse power is  1200.
+The price of this helicopter is 500.0$. This helicopter has 6 cylinders and It was made in 2015. It can carry to 4 passengers. 
+[Helicopter]
+This Helicopter is manufactured by Heli Coli. The horse power is  1200.
+The price of this helicopter is 500.0$. This helicopter has 6 cylinders and It was made in 2015. It can carry to 4 passengers. 
+[Quadcopter]
+This Quadcopter is manufactured by Asiana. The horse power is  100.
+The price of this quadcopter is 1000.0$. This quadcopter has 5 cylinders and It was made in 2013. It can carry to 6 passengers. Quadcopter's max speed is 1500.
+[Quadcopter]
+This Quadcopter is manufactured by Quadro Coli. The horse power is  1600.
+The price of this quadcopter is 550.0$. This quadcopter has 7 cylinders and It was made in 2022. It can carry to 6 passengers. Quadcopter's max speed is 4000.
+[Quadcopter]
+This Quadcopter is manufactured by Quadro Coli. The horse power is  1600.
+The price of this quadcopter is 550.0$. This quadcopter has 7 cylinders and It was made in 2022. It can carry to 6 passengers. Quadcopter's max speed is 4000.
+[Multirotor]
+This Multirotor Drone is manufactured by Asiana. The horse power is  100 and cost is 1000.0$. Multirotor has 4 rotors 
+[Multirotor]
+This Multirotor Drone is manufactured by Multi-Ro. The horse power is  3400 and cost is 10000.0$. Multirotor has 5 rotors 
+[Multirotor]
+This Multirotor Drone is manufactured by Multi-Ro. The horse power is  3400 and cost is 10000.0$. Multirotor has 5 rotors 
+[Agricultural]
+This Agricultural Drone is manufactured by AgriDrone. It weight 50.0 pounds, and cost 1500.0$. It can carry up to 100Kg.
+[Agricultural]
+This Agricultural Drone is manufactured by agridron. It weight 300.0 pounds, and cost 2500.0$. It can carry up to 10Kg.
+[Agricultural]
+This Agricultural Drone is manufactured by agridron. It weight 300.0 pounds, and cost 2500.0$. It can carry up to 10Kg.
+[MAV]
+This MAV's model name is UAV. It weight 50.0 pounds, and cost 1500.0$. Size of this MAV is  1200.0.
+[MAV]
+This MAV's model name is Latest MAV. It weight 290.0 pounds, and cost 3000.0$. Size of this MAV is  100.0.
+[MAV]
+This MAV's model name is Latest MAV. It weight 290.0 pounds, and cost 3000.0$. Size of this MAV is  100.0.
+[UAV]
+This UAV's weight  50.0 pounds, and cost 1500.0$.
+[UAV]
+This UAV's weight  2500.0 pounds, and cost 3600.0$.
