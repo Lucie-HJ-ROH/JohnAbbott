@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="UTF-8">
+    <title>Support | GentleLemur</title>
+    <meta name="description" content="World Best Pet Bed Product">
+    <meta name="author" content="GentleLemur">
+
+    <!-- Mobile Specific Metas
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="styles/main.css" rel="stylesheet"/>
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/tablet.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="styles/mobile.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles/styles.css" rel="stylesheet"/>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="images/png" href="img/favicon.png"/>
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script defer src="js/main.js"></script>
+    <script src="js/AddHTML.js"></script>
+    <script src="js/scripts.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="styles/summernote-lite.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="js/summernote-lite.js"></script>
+</head>
+<body>
+<!--HEADER-->
+<div include-html="htmls/header.html"></div>
+<!-- Body -->
+<div id="body__container">
+    <form class="support_container" action="complete.html" style = "margin-top: 40px">
+        <div class="card" style="width: 100%; margin-top: 20px;" >
+            <div class="card-header">
+                Contact Us
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"> <input type="text" class="form-control" placeholder="Name" id="name"></li>
+                <li class="list-group-item"><input type="email" class="form-control" placeholder="E-Mail Address" id="email">
+                </li>
+                <li class="list-group-item"> <input type="tel" class="form-control" placeholder="Enter phone number" id="phone"></li>
+                <li class="list-group-item"> <input type="text" class="form-control" placeholder="Enter the Title" id="title"></li>
+                <li class="list-group-item">  <textarea name="" id="myEditor" class="form-control" ></textarea></li>
+            </ul>
+            <div class="btnForm">
+                <button class="btn btn-lg btn-success btn-block">SUBMIT</button>
+                <button class="btn btn-lg btn-success btn-block" formaction="support.html">CANCEL</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+<!--FOOTER-->
+<div include-html="htmls/footer.html"></div>
+<script>
+    includeHTML();
+</script>
+
+
+<script>
+    $(document).ready(function () {
+
+        $('#myEditor').summernote({
+            height: 300,
+            minHeight: null,
+            maxHeight:null,
+            focus:true,
+            lang:"en",
+            placeholder : 'Description'
+        });
+    });
+</script>
+</body>
+</html>

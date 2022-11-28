@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text field validation</title>
+</head>
+
+<body>
+    <form onSubmit="return checkForLastName();">
+        <label for="lastNameField">Please enter your last name.</label>
+        <br />
+        <input type="text" id="lastNameField" />
+        <input type="submit" value="Submit Form" />
+    </form>
+
+    <script>
+        // When the user clicks the Submit button, the function 
+        // checkForLastName is called.
+        /*  
+            function checkForLastName() {
+                if (document.getElementById("lastNameField").value.length === 0) {
+                    alert("Please enter your last name");
+                    document.getElementById("lastNameField").focus();
+                    return false;
+                }
+            }
+
+
+        function checkForLastName() {
+            let targetField = document.getElementById("lastNameField");
+            if (targetField.value.length === 0) {
+                alert("Please enter your last name");
+                targetField.focus();
+                return false;
+            }
+        }
+          */
+
+          function checkForLastName() {
+            let targetField = document.getElementById("lastNameField");
+            if (targetField.value.length === 0) {
+                alert("Please enter your last name");
+                targetField.focus();
+                // If the user hasn't completed the field, 
+                // changes its background color to yellow
+                targetField.style.background = "yellow";
+                return false;
+            } else {
+                window.alert('Done! Thank you')
+            }
+            // After the user completes the field, 
+            // restores the background color to white
+            targetField.style.background = "white";
+
+        } // end function checkForLastName
+    </script>
+</body>
+
+</html>

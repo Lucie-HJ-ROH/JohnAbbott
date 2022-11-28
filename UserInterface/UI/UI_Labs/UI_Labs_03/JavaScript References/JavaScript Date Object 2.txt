@@ -1,0 +1,125 @@
+
+JavaScript Date Object
+
+The Date type provides information about dates and times, including the current date and time and calculations.
+
+the Date type stores dates as the number of milliseconds that have passed since midnight on January 1, 1970 UTC (Universal Time Code). Using this data storage format, the Date type can accurately represent dates 285,616 years before or after January 1, 1970.
+
+
+To create a date object, use the new operator along with the Date constructor, like this:
+var now = new Date()
+When the Date constructor is used without any arguments, the created object is assigned the current date and time.
+
+
+to create an instance (copy) with a specific date and time
+var variable_name = new Date("month day, year hours:minutes:seconds");
+
+All implementations must now support the following date formats:
+* month/date/year (such as 2/1/2018)
+* month_name date, year (such as February 1, 2018)
+* day_of_week month_name date year hours:minutes:seconds time_zone (such as Tue February 1 2018 00:00:00 GMT-0700)
+
+
+2:35 pm ==> 14:35
+the date object stores a numeric value that is equal to the number of milliseconds. 
+January 1, 1970 
+
+Methods of Date Object:
+three categories:
+1) get - getting the date and time 
+2) set - set the date and time 
+3) to - return a string value or convert (parse) and UTC method 
+
+Date-Formatting Methods
+There are several Date type methods used specifically to format the date as a string. They are as follows:
+* toDateString() — Displays the date's day of the week, month, day of the month, and year in an implementation-specific format.
+* toTimeString() — Displays the date's hours, minutes, seconds, and time zone in an
+implementation-specific format.
+* toLocaleDateString() — Displays the date's day of the week, month, day of the month,
+and year in an implementation- and locale-specific format.
+* toLocaleTimeString() — Displays the date's hours, minutes, and seconds in an
+implementation-specific format.
+* toUTCString() — Displays the complete UTC date in an implementation-specific format
+
+
+Date/Time Component Methods
+===========================
+The foollowing methods of the Date type deal directly with getting and setting specific parts of the date value. Note that references to a UTC date mean the date value when interpreted without a time-zone offset (the date when converted to GMT).
+
+METHOD 			DESCRIPTION
+* getTime() 		Returns the milliseconds representation of the date; same as valueOf().
+* setTime(milliseconds) 	Sets the milliseconds representation of the date, thus changing the entire date.
+* getFullYear() 	Returns the four-digit year (2013 instead of just 13).
+* getUTCFullYear() 	Returns the four-digit year of the UTC date value.
+* setFullYear(year) 	Sets the year of the date. The year must be given with four digits (2018 instead of just 18).
+* getMonth() 		Returns the month of the date, where 0 represents January and 11 represents December.
+* setMonth(month) 	Sets the month of the date, which is any number 0 or greater. Numbers greater than 11 add years.
+* getDate() 		Returns the day of the month (1 through 31) for the date.
+* setDate(date) 	Sets the day of the month for the date. If the date is greater than the number of days in the month, the month value also gets increased.
+* getDay() 		Returns the date's day of the week as a number (where 0 represents Sunday and 6 represents Saturday).
+* getHours() 		Returns the date's hours as a number between 0 and 23.
+* setHours(hours) 	Sets the date's hours. Setting the hours to a number greater than 23 also increments the day of the month.
+* getMinutes() 		Returns the date's minutes as a number between 0 and 59
+* setMinutes(minutes) 	Sets the date's minutes. Setting the minutes to a number greater than 59 also increments the hour
+* getSeconds() 		Returns the date's seconds as a number between 0 and 59.
+* setSeconds(seconds) 	Sets the date's seconds. Setting the seconds to a number greater than 59 also increments the minutes.
+* getMilliseconds() 	Returns the date's milliseconds.
+* setMilliseconds	Sets the date's milliseconds.
+* getTimezoneOffset() 	Returns the number of minutes that the local time zone is off set from UTC. For example, Eastern Standard Time returns 300. This value changes when an area goes into Daylight Saving Time.
+
+
+
+Math object 
+=========
+Math.method_name(expression)
+Math.abs()	: |+6| = 6, |-6| = 6
+	.acos() | .asin() | .atan() | .atan2()
+	.ceil(x) - x is rounded up to the highest integer
+	.floor(x)  - x is rounded down to the lowest integer
+	.max(x, y) - largest of x and y 
+	.min(x,y)
+	.pow(x, y)
+	.random() - a random number between 0 and 1(less than 1)
+	.round(x) - a is rounded to the nearest integer
+	
+Math.CONSTANT
+Math.E - natural logarithm
+Math.PI (3.1416)
+
+
+Some JavaScript Numeric function and methods
+isFinite(value)
+isNaN(value) 
+parseInt(string)
+parseFloat(string)
+value.toExponential(n) 
+value.toFixed(n)
+value.toPrecision(n)
+
+Conditional Operator
+variable_name = (condition) ? trueValue : falseValue;
+
+
+Time-delayed command
+setTimeout("js_command", delay);
+clearTimeout()
+
+timed-interval command
+setInterval("js_command", interval);
+clearInterval()
+
+Syntax to access a property of an object:
+objectName1.objectName.propertyName = expression;
+
+to access a field in a form inside the document object:
+document.form_name.field_name.value = expression;
+document.clockForm.dateNow.value = "12/10/2012";
+document.clockForm.timeNow.value = "9:14:05 AM";
+
+Event Handlers
+===========
+<element_name onevent = "script">...</body>
+
+
+
+

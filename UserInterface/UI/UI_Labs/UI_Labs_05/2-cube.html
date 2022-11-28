@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Cube</title>
+    <script>
+        /* create a function called cube that returns the valye of a number multiply by itself 3 times. Prompt the user to enter the number */
+
+        // declare a global variable
+       // var number;
+
+        // create the calculateCube function
+        // function function_name(argument_list) {}
+        function calculateCube() {
+            let input = window.prompt('Please enter a number', '0');
+            let number = parseFloat(input);
+
+            document.writeln('<h3>The cube of the number ' + number + ' is ' + getCube(number) + '</h3>');              
+   
+        } // end function calculateCube
+
+        // create getCube(arg) function
+        function getCube(number) {
+            let theCube = Math.pow(number, 3);
+            return theCube;
+        } // end function getCube
+
+        // addEventListener(event_name, function_name, use_capture)
+        window.addEventListener('load', calculateCube);
+    </script>
+</head>
+
+<!-- body onload="calculateCube();" -->
+<body>
+    <p>Calculate Cube</p>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!-- Declare the root element Contacts -->
+<!ELEMENT contacts (sales, customerservices, IT)>
+<!-- The Sales and CustSrv elements contain four child elements: first name, last name, phone, and email -->
+
+<!-- Define a paramter entity -->
+<!ENTITY % contact_info "(lastname, firstname, phone, cellphone, fax?, email)" >
+
+<!ELEMENT Sales (%contact_info;) >
+<!ELEMENT customerservices  (%contact_info;) >
+<!ELEMENT IT (%contact_info;) >
+
+<!-- declare child elements -->
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT cellphone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>

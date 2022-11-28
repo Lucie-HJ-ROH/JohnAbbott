@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function startup() {
+            alert(location.href); // shows current URL
+            if (confirm("Go to wikipedia?")) {
+                location.href = "https://wikipedia.org"; // redirect the browser to another URL
+            }
+        } // end function startup
+        window.addEventListener('load', startup);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

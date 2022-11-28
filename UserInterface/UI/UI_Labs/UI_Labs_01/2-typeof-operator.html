@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeof operator</title>
+    <script>
+
+        'use strict';
+        // 1. Declaration Phase
+        // declare variables of different types
+        let message;
+        let number1, number2;
+        let isMarried;
+        //  window.alert("I'm here");
+        let output1, output2, output3, output4;
+        let output5, output6, output7, output8;
+
+        let multi, addition, substract, division;
+
+        let myValue;
+
+        // 2. Initialization Phase         
+        message = 'Welcome';    // string
+        // window.alert("I'm here");
+        number1 = 2;            // numerical
+        number2 = '4';          // string
+        isMarried = false;      // Boolean
+
+        document.writeln(message);
+        // 3. Processing Phase
+        addition = number1 + number2;
+        output1 = 'Type of the addition is ' + typeof (addition);
+
+        multi = number1 * number2;
+        output2 = 'Type of the multi is ' + typeof (multi);
+
+        substract = number1 - number2;
+        output3 = 'Type of the substract is ' + typeof (substract);
+
+        division = number1 / number2;
+        output4 = 'Type of the division is ' + typeof (division);
+
+        output5 = 'Type of the isMarried is ' + typeof (isMarried);
+
+        // 4. Termination (Output) Phase 
+        document.writeln(output1);
+        document.write('<br />');
+
+        document.writeln(output2);
+        document.writeln(multi);
+        document.write('<br />');
+
+        document.writeln(output3);
+        document.writeln(substract);
+        document.write('<br />');
+
+        document.writeln(output4);
+        document.writeln(division);
+        document.write('<br />');
+
+
+        /* String data type
+           string must be quoted:
+           1. double quotes  " "
+           2. single quotes ' '
+           3. backtick (backbone) ` `
+           */
+
+        let str1 = "double quotes";
+        let str2 = 'single quotes';      
+        let str3 = 'can embed ' + str1;          
+        
+        document.write('<br />');
+        document.writeln(str1);
+
+        document.write('<br />');
+        document.writeln(str2);        
+        
+        document.write('<br />');
+        document.writeln(str3);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

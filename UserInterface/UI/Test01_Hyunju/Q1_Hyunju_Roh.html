@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary Calculator</title>
+    <script src="script/earning.js" defer></script>
+</head>
+<body>
+<div id="main">
+    <h1>Salary Calculator</h1>
+    <table style="border: 1px solid orange; width: 20%; align: center">
+        <tr>
+            <th>Item</th>
+            <th> Value</th>
+        </tr>
+        <tr>
+            <td><b>1</b></td>
+            <td>239.99</td>
+        </tr>
+        <tr>
+            <td><b>2</b></td>
+            <td>129.75</td>
+        </tr>
+        <tr>
+            <td><b>3</b></td>
+            <td>99.95</td>
+        </tr>
+        <tr>
+            <td><b>4</b></td>
+            <td>350.89</td>
+        </tr>
+
+    </table>
+    <br/>
+    <fieldset>
+        <legend>Step 1 : Enter the numbers of items</legend>
+        <table>
+            <tr>
+                <td style="width: 10%">Item</td>
+                <td style="width: 20%">Value</td>
+                <td style="width: 30%">Quantity</td>
+                <td style="width: 20%">SubTotal</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td id="itemValue1">$239.99</td>
+                <td><input type="text" id="item1" name="item1" onchange=calculateSubTotal1();></td>
+                <td id="subTotalItem1"> </td>
+
+            <tr>
+            <tr>
+                <td>2</td>
+                <td id="itemValue2" value="129.75">$129.75</td>
+                <td><input type="text" id="item2" name="item2" onchange=calculateSubTotal2();></td>
+                <td id="subTotalItem2"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="itemValue3" value="99.95">$99.95</td>
+                <td><input type="text" id="item3" name="item3" onchange=calculateSubTotal3();></td>
+                <td id="subTotalItem3"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="itemValue4" value="350.89">$350.89</td>
+                <td><input type="text" id="item4" name="item4" onchange=calculateSubTotal4();></td>
+                <td id="subTotalItem4"></td>
+            </tr>
+        </table>
+        <h6> You can enter 0 when there is no number for the item</h6>
+        <button type="button" id="submit" onclick="salaryCalculator();">Step 2 : Submit</button>
+    </fieldset>
+    <br/>
+    <fieldset>
+        <legend>Step 3 : Result</legend>
+        <table>
+            <tr>
+                <td> Base Salary</td>
+                <td></td>
+                <td></td>
+                <td> $200.00</td>
+            </tr>
+
+            <tr>
+                <td>Commission</td>
+                <td id="total"></td>
+                <td></td>
+                <td id="commission"></td>
+            </tr>
+
+            <tr>
+                <td>Total Salary</td>
+                <td></td>
+                <td></td>
+                <td id="result"></td>
+
+            </tr>
+        </table>
+
+    </fieldset>
+</div>
+
+
+</body>
+</html>

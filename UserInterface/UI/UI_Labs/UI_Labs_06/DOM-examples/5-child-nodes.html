@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function startup() {
+            for (let i = 0; i < document.body.childNodes.length; i++) {
+
+                //  document.writeln(document.body.childNodes[i] + '<br />');
+                alert(document.body.childNodes[i]); // Text, DIV, Text, UL, ..., SCRIPT
+
+            }
+
+        } // end function startup
+
+        function getNode() {
+            for (let node of document.body.childNodes) {
+                alert(node); // shows all nodes from the collection
+            }
+        }
+
+        function getPME() {
+            for (let prop in document.body.childNodes) {
+                alert(prop);
+            }
+        }
+
+        window.addEventListener('load', getPME);
+    </script>
+</head>
+
+<body>
+    <div>Begin</div>
+    <ul>
+        <li>Information</li>
+    </ul>
+    <div>End</div>
+</body>
+
+</html>
