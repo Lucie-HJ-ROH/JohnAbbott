@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Activity.iml" filepath="$PROJECT_DIR$/Activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Activity03/Activity03.iml" filepath="$PROJECT_DIR$/../Activity03/Activity03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Assignment01/Assignment01.iml" filepath="$PROJECT_DIR$/../Assignment01/Assignment01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Assignment02/Assignment02.iml" filepath="$PROJECT_DIR$/../Assignment02/Assignment02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EX01/EX01.iml" filepath="$PROJECT_DIR$/../EX01/EX01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EX02/EX02.iml" filepath="$PROJECT_DIR$/../EX02/EX02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DesignPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/../DesignPattern/FactoryPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Practice/Practice.iml" filepath="$PROJECT_DIR$/../Practice/Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Session03/Session03.iml" filepath="$PROJECT_DIR$/../Session03/Session03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Sort/Sort.iml" filepath="$PROJECT_DIR$/../Sort/Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Assignment02/Assignment02/untitled.iml" filepath="$PROJECT_DIR$/../Assignment02/Assignment02/untitled.iml" />
+    </modules>
+  </component>
+</project>
