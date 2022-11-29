@@ -1,4 +1,4 @@
-function callPutBody() {
+export function CallPutBody() {
     fetch("http://localhost:3001/users", {
         method: "PUT",
         body: JSON.stringify({
@@ -6,7 +6,7 @@ function callPutBody() {
             password: "12345"
         }),
         headers: {
-            "Content-type": "application/json;charset = UTF - 8",
+            "Content-type": "application/json;charset=UTF-8",
         },
     })
         .then((data) => data.json())

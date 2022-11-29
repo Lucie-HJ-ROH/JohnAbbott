@@ -1,5 +1,5 @@
-function callPatchBodyUsername() {
-    fetch("http://localhost:3001/users/elie/passw ord", {
+export function CallPatchBodyUsername() {
+    fetch("http://localhost:3001/users/lucie/password", {
         method: "PATCH",
         body: JSON.stringify({
             password: "12345"

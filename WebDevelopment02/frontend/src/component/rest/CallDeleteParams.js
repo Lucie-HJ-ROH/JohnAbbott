@@ -1,4 +1,4 @@
-function callDeleteParams() {
+export function CallDeleteParams() {
     fetch("http://localhost:3001/users/lucie",
         { method: "DELETE" })
         .then((data) => data.json())

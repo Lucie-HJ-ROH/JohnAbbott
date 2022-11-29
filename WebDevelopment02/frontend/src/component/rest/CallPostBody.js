@@ -6,8 +6,6 @@ export function CallPostBody() {
         body: JSON.stringify({
             username: "lucie",
             password: "luciePassword",
-
-
         }),
         headers: {
             "Content-type": "application/json;charset=UTF-8",

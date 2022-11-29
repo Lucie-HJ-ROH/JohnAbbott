@@ -1,5 +1,5 @@
 
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars,  faTimes } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
@@ -7,6 +7,9 @@ import {faApple} from "@fortawesome/free-brands-svg-icons";
 import {Route, Routes, useNavigate} from "react-router-dom";
 import Footer from "./Footer";
 import NavButton from "../NavButton";
+import { LoggedInContext } from "../../App";
+import {Button} from "react-bootstrap";
+import LogoutButton from "../LogoutButton";
 
 
 const HeaderStyle = styled.div`
@@ -65,9 +68,25 @@ const HeaderStyle = styled.div`
     }
   }
 `;
+
+function HomeButton() {
+    return (
+        <div>
+            <Button className='button'>Home</Button>
+
+        </div>
+    );
+}
+
 function Header(){
     const [isToggled, setIsToggled] = useState(false);
     const navigate = useNavigate();
+    const [isLoggedIn, setIsLoggedIn] = useContext(LoggedInContext);
+
+
+    const logoutHandler = () => {
+        setIsLoggedIn(false);
+    }
 
     const handleSubmit = (event) => {
         try {
@@ -77,36 +96,15 @@ function Header(){
         }
     };
     return (
-        <HeaderStyle isToggled={isToggled} >
-            {/* hamburger button(bar) */}
-            <div
-                className="toggle"
-                onClick={() => {
-                    setIsToggled(!isToggled);
-                }}
-            >
-                <FontAwesomeIcon icon={!isToggled ? faBars : faTimes} />
-            </div>
 
-            {/* Apple logo svg using fontawesome */}
-            <div className="logo">
-                <FontAwesomeIcon icon={faApple} onClick={handleSubmit} />
-                {/*<FontAwesomeIcon icon="fa-solid fa-house-blank" />*/}
+            <div>
+                {/*{isLoggedIn ? "Welcome" : "Please login"}*/}
+                {isLoggedIn ? <LogoutButton onClick = {logoutHandler}/> : ''}
+                <HomeButton/>
             </div>
 
 
-            {/* menu list */}
-            <ul className="header__menulist">
-                <li>
-                    <NavButton to="/" label="Home" />
-                </li>
-                <li>
-                    <NavButton to="/About" label="About" />
-                </li>
 
-            </ul>
-
-        </HeaderStyle>
     );
 
 }
