@@ -1,0 +1,1 @@
+Email :  password :  repassword : first_name :  last_name :  phone_number : address :  address2:  town :  region :  postcode : country : 
