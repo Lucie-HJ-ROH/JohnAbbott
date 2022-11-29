@@ -1,0 +1,111 @@
+Frequently used htmL codes
+=====================
+HTML code elements serve specific purposes. Tags can create structures, apply formatting, identify logical content, or generate interactivity. Tags that create stand-alone structures are called block elements; the ones that perform their work within the body of another tag are called inline elements. 
+
+htmL elements (tags)
+================
+The following are some of the most frequently used HTML elements. To get the most out of Web Development and your webpages, it helps to understand the nature of these elements and how they are used. Remember, some tags can serve multiple purposes.
+
+htmL character entities
+=================
+Entities exist for every letter and character. If a symbol can’t be entered directly from the keyboard, it can be inserted by typing the name or numeric value between the & and semi-colon: for example, &nbsp;
+
+Introducing htmL5
+==============
+The current version of HTML has been around for over 10 years and has not kept pace with many of the advances in technology, such as cell phones and other mobile devices. The World Wide Web Consortium (W3C), the standards organization responsible for maintaining and updating HTML and other web standards, has been working diligently on updating the language and released the first working draft of HTML5 in January 2008. The latest update was published in March 2012, but a final version may not be ready for several more years. So, what does that mean for current or up-and-coming web designers? Not much—yet.
+
+Websites and their developers change and adapt to current technologies and market realities quickly, but the underlying technologies progress at a more glacial pace. Browser manufacturers are already supporting many of the new features of HTML5 today. Early adopters will attract developers and users who are interested in the latest and greatest, which means that older, non-HTML5-compliant browsers will be abandoned as these new features are implemented in the majority of popular websites. Some say the full transition won’t happen until 2020 or later; others think it will happen more quickly. In any case, backward-compatibility to HTML 4.01 will be certain well into the future, so your older pages and sites won’t suddenly explode or disappear.
+
+What’s new in htmL5
+=================
+Every new version of HTML has made changes to both the number and the purpose of the elements that make up the language. HTML 4.01 consists of approximately 90 elements. Some of these elements have been deprecated or removed altogether, and new ones have been adopted or proposed. 
+
+Many of the changes to the list revolve around supporting new technologies or different types of content models. Some changes simply reflect customs or techniques that have been popularized within the developer community since the previous version of HTML was adopted. Other changes simplify the way code is created and make it easier to write and faster to disseminate.
+
+htmL5 elements (tags)
+=================
+The following are some of the important new tags in HTML5, which, at the moment, consists of over 100 tags. Almost 30 old tags have been deprecated, which means HTML5 features nearly 50 new elements in total. We will use many of these new HTML5 elements as appropriate and will explain the elements’ intended role on the web. Take a few moments to familiarize yourself with
+these tags and their descriptions.
+
+
+semantic web design
+===============
+Many of the changes to HTML have been done to support the concept of semantic web design, or designing webpages using elements and structures that provide or possess intrinsic meaning. For example, it has led to the introduction of many new elements, such as <article>, <section>, <header>, and <footer>. It is a movement that has important ramifications for the future and usability of HTML and for the interoperability of websites on the Internet. At the moment, each webpage stands alone on the web. The content may link to other pages and sites, but there’s really no way to combine or collect the information available on multiple pages or multiple sites in a coherent manner. Search engines do their best to index the content that appears on every site, but much of it is lost because of the nature and structure of old HTML code.
+
+HTML5 has added a significant number of new tags to help us add meaning to our markup. Tags like <header>, <footer>, <article>, and <section> allow you for the first time to identify specific content without having to resort to additional attributes, such as <div class="header">...</div>. The end result is simpler code and less of it. But most of all, the addition of semantic meaning to your code will allow you and other developers to connect the content from one page to another in new and exciting ways—many of which haven’t even been invented yet.
+
+
+HTML syntax
+
+3 types of PC Languages
+1) Markup ( (X)HTML, CSS, XML, XSL, ...)
+	<element_name>element_content</element_name>
+	<p>Welcome to our site!</p>
+	
+	<element_name 		attribute_name="value"> 
+	element_content</element_name>
+
+	<p name="myP">Welcome to our site!</p>
+
+2) Scripting languages (JavaScript, PHP, ASPX, JSP, ...)
+
+3) Programming languages (Java, C, C++, C#, VB.NET, ... )
+
+
+HTML Document
+<html>
+   <head>
+	<title>title of the web page</head>
+	<link type="text/css" rel="stylesheet" href="styles/filename.css" >
+	<script type="text/javascript" src="scripts/filename.js" ></script>
+	<meta charset="utf-8" >
+	<meta name="description" content="describe the content of this page" >
+	<meta name="author" content="my name" >
+
+   </head>
+
+   <body>
+	<!-- your comment goes here -->
+	<!-- 6 heading elements -->
+	<h1>Welcome</h1>
+	<h2>
+	...
+	<h6>
+
+	<img src="images/trees.gif" alt="alterante text" title="alterante text" width="50" height="50" >
+   </body>
+
+
+
+</html>
+
+
+
+element with content
+	<element_name>element_content</element_name>
+
+element with no content (empty element)
+	<element_name />
+
+
+
+Common attribute for all html elements
+* name
+* title
+* class 
+* id
+* style
+
+
+A Web Page, Step by Step
+==========================
+Five steps that cover the basics of page production.
+Step 1: Start with content. As a starting point, we’ll write up raw text content and see what browsers do with it.
+Step 2: Give the document structure. 
+Step 3: Identify text elements. Describe the content using the appropriate text elements. 
+Step 4: Add an image to the page.
+Step 5: Change the page appearance with a style sheet. 
+
+
+
+

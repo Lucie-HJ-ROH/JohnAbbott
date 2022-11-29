@@ -1,0 +1,85 @@
+﻿http://www.telerik.com/
+http://fiddler.wikidot.com/
+https://tools.pingdom.com/
+https://www.browserstack.com/
+http://fontawesome.io/
+https://octicons.github.com/
+https://www.elegantthemes.com/blog/resources/elegant-icon-font
+http://typicons.com/
+http://www.alessioatzeni.com/meteocons/
+https://useiconic.com/open
+http://getskeleton.com/
+https://tutsplus.com/
+http://getbootstrap.com/2.3.2/
+https://www.youtube.com/playlist?list=PLA615C8C2E86B555E
+http://foundation.zurb.com/
+http://zurb.com/about/
+http://foundation.zurb.com/sites/docs/v/5.5.3/components/buttons.html
+https://projection.pixar.com/
+http://globalcloset.education.nationalgeographic.com/
+http://living.is/en/
+http://www.getswizzle.com/
+
+CSS preprocessors
+===================
+http://lesscss.org/
+http://sass-lang.com/
+http://stylus-lang.com/
+http://winless.org/
+
+
+https://nodejs.org/en/
+https://codekitapp.com/index.html
+https://wearekiss.com/simpless
+https://getcrunch.co/
+
+
+
+
+
+
+
+Demonstrating Responsive Design
+=================================
+♦ RWD demonstration (http://jamus.co.uk/demos/rwd-demonstrations/)
+♦ Screenqueri.es (http://screenqueri.es/)
+♦ Responsinator (http://www.responsinator.com/)
+♦ ResposnivePX (http://responsivepx.com/)
+♦ Resizer (http://codebomber.com/jquery/resizer/)
+♦ Screen Fly (http://quirktools.com/screenfly/)
+♦ Adobe Edge Inspect (http://html.adobe.com/edge/inspect/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

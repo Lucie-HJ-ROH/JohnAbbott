@@ -1,0 +1,122 @@
+﻿Getting Your Tools in Order
+============================
+When you start on a project, whether it’s painting a room or writing a program, you don’t just jump in and grab a brush or start typing. You come up with a plan to complete the project and gather the materials you need to get the work done. Your plan may be as simple as deciding to paint the walls before you paint the ceiling, or it may be as complex as a detailed outline of everything you plan to write in your program.
+
+The same goes for materials. If you’re painting a room, you need brushes, paint, and maybe something to prevent getting paint where you don’t want it.
+
+Just as with most other projects, the process of writing and designing web pages takes some planning and thought before you start flinging text and graphics around and linking them wildly to each other. Likewise, you’ll want to make sure you have everything you need on your computer to build web pages, as well as a place on the Web to host your website when you’re finished.
+
+
+Anatomy of a Website
+====================
+
+♦ Website — A collection of one or more web pages linked together in a meaningful way that, as a whole, describes a body of information or creates an overall effect.
+
+♦ Web server — A computer on the Internet or an intranet that delivers web pages and other files in response to browser requests.
+
+♦ Web page — A single document on a website, usually consisting of a Hypertext Markup Language (HTML) document and any items that are displayed within that document, such as inline images or style sheets.
+
+♦ Home page — The entry page for a website, which can link to additional pages on the same website or pages on other sites.
+
+
+Text Editors
+============
+Here’s a list of a few editors often used by people who create websites:
+
+• Komodo Edit is a free, open source version of the popular Komodo IDE. It runs on Windows, Macintosh, and Linux and offers a lot of features of an IDE. You can download it at http://komodoide.com/komodo-edit/.
+
+• HTML-Kit is a popular text editor specifically for web pages for Windows. You can download it at http://www.htmlkit.com/. You can use an older version for free or you can pay for the latest and greatest.
+
+• Notepad++ is a free, open source text editor for Windows that is very popular. You can download it at http://notepad-plus-plus.org/.
+
+• TextWrangler is a popular, free text editor for OS X. It was created by Bare Bones Software, and you can download it at their website at http://www.barebones.com/products/textwrangler/. You may also be interested in BBEdit, a more powerful text editor with a licensing fee.
+
+• Coda is a text editor specifically for people creating web pages by Panic. It includes a lot of development features like source control and database connectivity. You can find it at http://panic.com/coda/. It also has a licensing fee.
+
+
+Wireframing Your Website
+========================
+The next step in planning your website is to figure out what content goes on which pages and to come up with a scheme for navigating between those pages.
+
+Some things to think about when developing your wireframes are as follows:
+
+◘ Which topics will go on each page?
+=====================================
+Trying to figure out how much information to put on one page can be tricky. Some websites put all of their content on one long, cleverly designed page. Others split it up between a great many pages. Still others use modern techniques to dynamically load parts of the page on demand without ever really moving from one page to another. Without getting too fancy, your best bet is to organize your content so that each page consists of information on a single topic.
+
+If your pages become more than a few screens long, it might be time to split them into logical subtopics.
+
+◘ What are the primary forms of navigation between pages? 
+=========================================================
+What links will you need for your visitors to navigate from page to page? They are the main links in your document that enable your visitors to accomplish the goals you defined in the first section. Links for forward, back, up, down, and home all fall under the category of primary navigation.
+
+◘ What alternative forms of navigation are you going to provide?
+=================================================================
+In addition to the simple navigation links, some websites contain extra information that’s parallel to the main web content, such as a glossary of terms, an alphabetic index of concepts, copyright information, or a credits page. Consider these extra forms of information when designing your plan, and think about how you’re going to link them into the main content.
+
+◘ What will you put on your home page?
+======================================
+Because the home page is the starting point for the rest of the information in your website, consider what sort of information you’re going to put on the home page. A blog? A general summary of what’s to come? A list of links to other topics? Whatever you put on the home page, make sure that it’s compelling enough so that members of your intended audience want to stick around.
+
+
+◘ How will visitors to inner pages establish context?
+====================================================
+Unless your website requires customers to register to view your content, there’s a good chance that users could arrive on any page on your site by way of a search engine. It’s important to make sure that customers can figure out which site they’re on and that there’s more information that they may also be interested in. You can generally establish this context through your design and navigation.
+
+
+◘ What are your goals?
+=======================
+As you design the framework for your website, keep your goals in mind, and make sure that you aren’t obscuring your goals with extra information or content.
+
+
+◘ Web Hosting
+=============
+At some point, you’ll want to move the websites you create from your local computer to a server on the Internet. Before doing so, you must decide exactly what kind of hosting arrangement you want. The simplest approach is to get a web hosting account that enables you to upload your HTML files, images, style sheets, and other web content to a server that’s visible on the Web. This approach enables you to easily create web pages (and websites) locally and publish them on the server without making changes to them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

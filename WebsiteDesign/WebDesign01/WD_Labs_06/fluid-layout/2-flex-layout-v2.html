@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-flex-layout-v2</title>
+    <style>
+        div div {
+            width: 100px;
+            height: 100px;
+            margin: 1rem;
+            background: #ccc;
+        }
+
+        .flex-wrapper {
+            display: flex;
+            /* flex-wrap: nowrap | wrap | wrap-reverse */
+            flex-wrap: wrap;
+            /* flex-direction: row | row-reverse | column | colum-reverse */
+            flex-direction: row; 
+        }
+
+        .item1 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+        }
+
+        .item2 {
+            flex-grow: 3;
+            flex-shrink: 2;
+            flex-basis: auto;
+        }
+
+                
+
+    </style>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="item1 box">Item 1</div>
+        <div class="item2 box">Item 2</div>
+        <div class="item1 box">Item 3</div>
+        <div class="item2 box">Item 4</div>
+        <div class="item1 box">Item 5</div>
+        <div class="item2 box">Item 6</div>
+    </div>
+</body>
+</html>

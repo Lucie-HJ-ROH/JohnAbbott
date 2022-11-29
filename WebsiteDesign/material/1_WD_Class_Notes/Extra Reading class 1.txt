@@ -1,0 +1,7 @@
+Extra Reading class 1: 
+
+•	10 top principles of effective web design: https://shortiedesigns.com/2014/03/10-top-principles-effective-web-design/ 
+•	Design & User Experience: https://developers.google.com/web/fundamentals/design-and-ux/ux-basics/
+•	Web Content Accessibility Guidelines (WCAG) Overview: https://www.w3.org/WAI/standards-guidelines/wcag/
+• 	chema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. https://schema.org
+•	MDN Web Docs - Resources for developers, by developers. https://developer.mozilla.org/en-US/

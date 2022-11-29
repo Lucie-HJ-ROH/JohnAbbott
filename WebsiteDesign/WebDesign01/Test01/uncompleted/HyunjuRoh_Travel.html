@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Travels</title>
+    <link rel="stylesheet" href="styles/HyunjuRoh_travels.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;700&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <h1>Share Your Travels</h1>
+    <h4>let us know where you've been</h4>
+</header>
+
+
+<main id="main">
+    <form id="hotel_reservation" method="post" action="Travel-form-completed.html" autocomplete="off">
+
+        <photodetails>
+            PHOTO DETAILS
+        </photodetails>
+
+        <br>
+
+        <title_text>
+            <label for="title">Title</label>
+            <br>
+            <input type="text" id="title" size="200" maxlength="100"
+                   placeholder="Give your photo a descriptive name"/>
+        </title_text>
+        <description>
+            <label for="description">Description</label>
+            <br>
+            <textarea id="description" cols="165" rows="4"
+                      placeholder="Adding a rich description will help with search result"></textarea>
+        </description>
+
+        <continent>
+            <label for="continent">Continent</label>
+            <br>
+            <select id="continent">
+                <option value="" disabled selected>Choose continent</option>
+                <option value="Africa">Africa</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+            </select>
+        </continent>
+
+        <br>
+        <Country>
+            <label for="country">Country</label>
+            <br>
+            <select id="country">
+                <option value="" disabled selected>Choose Country</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="United States">United States</option>
+            </select></Country>
+        <br>
+        <city><label for="city">City</label>
+        <br>
+        <select id="city">
+            <option style="display: none"></option>
+            <option value="Calgary">Calgary</option>
+            <option value="Montreal">Montreal</option>
+            <option value="Toronto">Toronto</option>
+            <option value="Vancouver">Vancouver</option>
+        </select>
+            </city>
+            <br>
+        <input type="submit" id="submit_reservation" value="Submit"/>
+        <input type="reset" id="clear_form" value="Clear Form"/>
+
+    </form>
+
+</main>
+
+</body>
+</html>

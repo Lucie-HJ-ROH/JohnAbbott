@@ -1,0 +1,236 @@
+﻿What Is Web Publishing?
+=======================
+
+♦ How the World Wide Web really works
+♦ What web browsers do, and which browsers your audience will be using
+♦ What a web server is, and why you need one
+♦ What a uniform resource locators (URLs) is
+
+
+Thinking Like a Web Publisher
+=============================
+Being a web publisher means understanding what happens when you enter an address in your web browser or click a link and visit a website.
+
+The Web is
+===========
+1. A hypertext information system
+2. Cross-platform
+3. Distributed
+4. Dynamic
+5. Interactive
+
+
+1. The Web Is a Hypertext Information System
+============================================
+The idea behind hypertext is that instead of reading text in a rigid, linear structure (such as a book), you can skip easily from one point to another. You can get more information, go back, jump to other topics, and navigate through the text based on what interests you at the time.
+
+Hypertext enables you to read and navigate text and visual information in a nonlinear way, based on what you want to know next.
+
+When you hear the term hypertext, think links (hyperlinks.)
+
+
+2. The Web Is Cross-Platform
+=============================
+If you can access the Internet, you can access the World Wide Web, regardless of whether you’re working on a smartphone, a tablet, a brand new laptop, or a desktop computer.
+
+Cross-platform means that you can access web information equally well from any computer hardware running any operating system using any display.
+
+
+3. The Web Is Distributed
+==========================
+Web content can take up a great deal of storage, particularly when you include images, audio, and video.
+
+The Web succeeds at providing so much information because that information is distributed globally across millions of websites, each of which contributes the space for the information it publishes. 
+
+These sites reside on one or more computers, referred to as web servers. 
+A web server is just a computer that listens for requests from web browsers and responds to that request. You, as a consumer of that information, request a resource from the server to view it. You don’t have to install it or do anything other than point your browser at that site.
+
+A website is a location on the Web that publishes some kind of information. When you view a web page, your browser connects to that website to get that information.
+
+Each website, and each page or bit of information on that site, has a unique address. This address is called a uniform resource locator or URL.
+
+
+4. The Web Is Dynamic
+=====================
+If you want a permanent copy of some information that’s stored on the Web, you have to save it locally because the content can change any time, even while you’re viewing the page.
+
+
+5. The Web Is Interactive
+=========================
+Interactivity is the capability to “talk back” to the web server. More traditional media, such as television, isn’t interactive in the slightest; all you do is sit and watch as shows are played at you. Other than changing the channel, you don’t have much control over what you see. The Web is inherently interactive; the act of selecting a link and jumping to another web page to go somewhere else on the Web is a form of interactivity. In addition to this simple interactivity, however, the Web enables you to communicate with the publisher of the pages you’re reading and with other readers of those pages.
+
+
+Indeed, the most popular sites on the Web these days are about interacting with other users of the site rather than with the site’s publisher. That’s what people mean when they say “social media.” Rather than spending money to hire writers and cameramen, now sites are spending money to hire programmers to create spaces for people to share content they create with one another. These days, it’s not uncommon to see people on TV reading viewer posts from Twitter or Facebook out loud on the air. Such is the degree to which this form of media has taken hold.
+
+
+As a web publisher, you’ll need to decide the type of interaction you want your site to provide. You can publish web pages without any outlet for users to interact. You can enable users to submit feedback privately. You can enable them to publish public comments and converse with you and with each other. You can provide forums that enable users to interact with one another directly. You can provide games or other interactive features. You can even incorporate interactive features from other websites into your own so that you can integrate your site with the sites to which your users already belong.
+
+
+Web Browsers
+============
+A web browser, as mentioned earlier, is the application you use to view pages and navigate the World Wide Web. 
+
+A wide array of web browsers is available for just about every platform you can imagine. Microsoft Internet Explorer, for example, is included with Windows, and Safari is included with OS X. Mozilla Firefox, Google Chrome, and Opera are all available as free downloads. Likewise, more and more people are using browsers on mobile devices and tablets. iPhone and iPad use Mobile Safari. The Android mobile platform has its own browser. There are also other mobile platforms, like BlackBerry and Windows Phone, and third-party browsers for both Android and iPhone. 
+
+Not too many years ago, Internet Explorer was the dominant browser for Windows, the OS X market share was less than 5%, and mobile browsers were so limited that they wouldn’t work with regular web pages at all. Back then, developers sometimes chose to support Internet Explorer and ignore other browsers. That is no longer a viable strategy.
+
+
+What the Browser Does
+=====================
+The core purpose of a web browser is to connect to web servers, request documents, and then properly format and display those documents. Web browsers can also display files on your local computer, download files that are not meant to be displayed, and in some cases even allow you to send and retrieve email. What the browser is best at, however, is retrieving and displaying web documents. 
+
+Each web page is written in a language called the Hypertext Markup Language (HTML) that includes the text of the page, a description of its structure, and links to other documents, images, or other media. The browser takes the information it gets from the web server and formats it for your display. Different browsers might format and display the same file in diverse ways, depending on the capabilities of that system and how the browser is configured.
+
+
+An Overview of Some Popular Browsers
+=====================================
+There’s a good chance you use only one browser, or two, if you use a browser on a computer and one on a mobile device. However, your website will probably be visited by a variety of browsers, and to publish on the Web successfully, you’ll need to be aware of them. This section describes some of the most popular browsers on the Web. They’re in no way the only browsers available, and if the browser you’re using isn’t listed here, don’t feel that you have to use one of these. Whichever browser you have is fine as long as it works for you.
+
+1. Google Chrome
+=================
+Google Chrome is currently the most popular web browser. Its market share has shown incredible growth because the browser offers great performance and stability and is updated often, plus it is used on both desktop and mobile devices. It uses the same HTML engine as Apple’s Safari browser, an open source engine called WebKit.
+
+
+2. Microsoft Internet Explorer
+==============================
+Microsoft’s browser, Microsoft Internet Explorer, is included with Microsoft Windows and is still the second most popular web browser. It has lost market share to other browsers because new versions are not released as often as Google Chrome and Mozilla Firefox. However, a huge number of people still use Internet Explorer, and it is the most unlike other browsers like Chrome, Firefox, and Safari. According to the website CanIUse.com, Internet Explorer 10 offers 49% support of HTML5 features, and Internet Explorer 11 offers 58% support.
+
+
+One other important point to make about Internet Explorer is that the different versions differ greatly.
+In 2015 Microsoft released a new browser Microsoft Edge—the default browser for Windows 10.
+
+
+3. Mozilla Firefox
+===================
+Mozilla Firefox is a free, open source web browser that makes up roughly 15% of the browser market as of July 2015. Netscape Navigator was the first popular commercial web browser. Version 1.0 was released in 1994. In 1998, Netscape Communications opened the source code to their web browser and assigned some staff members to work on making it better. Seven years and many releases later, the result of that effort was Mozilla Firefox. Netscape Communications, since acquired by America Online, no longer has any official ties to the Mozilla Foundation, which is now an independent nonprofit organization.
+
+
+4. Apple Safari
+===============
+Safari is the default browser for OS X. There is also a mobile version of this browser installed on the Apple iPhone and iPad. It is based on open source technology, and its support for web standards is at a similar level to Firefox. Right now, Safari has around 9% of the browser market share.
+
+
+Mobile Browsers
+===============
+The big three are Chrome, Safari, and Android. As of July 2015, Chrome has 31% of the market share for mobile browsers, with Safari and Android at 24% and 15%, respectively.
+
+Google Chrome came on the market for mobile devices before 2014 and became the most popular browser on mobile devices in early 2015. It uses the same engine as the desktop version of the browser and offers the performance and reliability people have come to expect of Chrome. 
+
+Safari is the browser Apple includes with iOS devices like the iPhone and iPad. It offers very strong HTML5 support and, apart from screen size, provides an experience very similar to a desktop browser. Similarly, Android provides a browser that also provides a high-quality web experience. All three of them are based on the WebKit rendering engine, just like Safari and Chrome for the desktop.
+
+Other Browsers
+===============
+As of July 2015, Google Chrome has the lion’s share of the market for web browsers on both desktop and mobile devices.
+Opera (http://www.operasoftware.com/) has a niche market with only 5% share. It’s small, fast, free, and available for a number of platforms.
+
+For UNIX users who use KDE, there’s Konqueror. There are various Mozilla offshoots, such as Camino for Mac OS X. Likewise, command-line browsers such as Lynx and Links are available to provide an all-text view of web pages. There are also a number of browsers that provide access to the Web for people with various special needs. It makes sense to code to common standards to accommodate all these types of browsers.
+
+
+Web Servers
+=============
+To view and browse pages on the Web, all you need is a web browser. To publish pages on the Web, you need a web server.
+A web server is the program that runs on a computer and is responsible for replying to web browser requests for whatever content is associated with a particular URL. You need a web server to publish documents on the Web.
+
+When you use a browser to request a page on a website, that browser makes a web connection to a server using HTTP. The server accepts the connection, sends the contents of the requested files, and then closes the connection. The browser then formats the information it got from the server.
+
+On the server side, many different browsers can connect to the same server to get the same information. The web server is responsible for handling all these requests. Web servers do more than just serve files. They’re also responsible for managing form input and for linking forms and browsers with programs such as databases running on the server.
+
+
+Uniform Resource Locators
+=========================
+A URL is a pointer to some bit of data on the Web, be it a web document, an image, a style sheet, or a JavaScript script.
+
+URLs contain information about the following:
+• How to get to the information (which protocol to use: FTP, HTTP, or file)
+
+• The Internet hostname of the computer where the content is stored (www.ncsa.uiuc.edu, ftp.apple.com, netcom16.netcom.com, and so on)
+
+• The directory or other location on that site where the content is located
+
+
+
+Defining Web Publishing Broadly 
+================================
+When the Web was invented, web publishing meant one thing: creating web pages as individual files and uploading them to a server so that people could view them in their browsers. Since then, pretty much everything has changed.
+
+A few websites still include hand-coded web pages that the creator uploads, but most websites are created using software that runs on the server. Web pages have gotten more complex, as have websites. These days, most content on web pages is written using applications that live on the Web as well. For example, you can create a blog at WordPress.com and immediately begin posting content through the WordPress web interface.
+
+Whether you’re posting status updates on Twitter, writing comments on a news site, publishing a blog through a tool, or editing articles on Wikipedia, you’re publishing on the Web. In most cases, you are not required to directly write HTML on your own. Generally, the pages live in templates that someone else created, and often you can format the content you create using a graphical editor or with simplified markup that enables you to avoid the use of HTML.
+
+Ultimately the content, however you enter it, will be converted to HTML before it is displayed to users. So if you publish something and it doesn’t look right, you’ll need to know HTML if you want to fix it. You’ll need to be able to differentiate between the parts of the page you control and the parts that are built in to the publishing application that you’re using. And if you want to take greater control of the appearance of your site, you will probably need to know HTML to update the templates that are used to give your pages their own look and feel.
+
+
+
+Who controls Web protocols
+===========================
+No single entity owns or controls the World Wide Web. Given the enormous number of independent sites that supply information to the Web, for any single organization to set rules or guidelines would be impossible. Two groups of organizations, however, have a great influence over the look and feel and direction of the Web itself.
+
+The first is the World Wide Web Consortium (W3C), based at Massachusetts Institute of Technology in the United States and INRIA in Europe. The W3C is made up of individuals and organizations interested in supporting and defining the languages and protocols that make up the Web (HTTP, HTML, XHTML, and so on). It also provides products (browsers, servers, and so on) that are freely available to anyone who wants to use them. The W3 Consortium is the closest anyone gets to setting the standards for and enforcing rules about the World Wide Web. You can visit the Consortium’s home page at http://www.w3.org/.
+
+The second group of organizations that influences the Web is the browser developers themselves, most notably Google, Apple, Microsoft, and the Mozilla Foundation. The competition to be the most popular and technically advanced browser on the Web can be fierce. A group of people and companies interested in the future of the Web have created an organization called the Web Hypertext Application Technology Working Group (or WHATWG). The WHATWG, along with the W3C, wrote the HTML5 specification.
+
+
+Going forward, the WHATWG has abandoned version numbers for the HTML specification entirely. Instead, HTML will be a “living standard” and incorporate both experimental and widely supported features. The goal is to make sure that the specification evolves to match the features that browser makers have agreed to add to their browsers. If a proposed feature does not reach consensus, it is removed from the specification. This is an attempt to prevent the problems of the past where the process of creating the HTML specification diverged from the work the browser makers were doing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Links to check
+==============
+http://www.nytimes.com/
+http://craphound.com/littlebrother
+http://www.bbc.co.uk/
+https://konqueror.org/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

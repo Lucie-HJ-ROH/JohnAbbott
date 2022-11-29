@@ -1,0 +1,411 @@
+
+Web Forms
+
+Using the <form> Element
+========================
+The <form> element is the container for creating a form, as the <table> element is the container for the elements that create a table. A form has a number of attributes that describe how the form data is handled.
+
+Attribute 	Description
+======= 	=========
+1. action:	The URL of the application that processes the form data; this URL points to a script file or an e-mail address 
+2. enctype: The content type used to submit the form to the server (when the value of the method is "post"); most forms do not need this attribute 
+3. method: 	Specifies the HTTP method used to submit the form data; the default value is "get"
+	• get — The form data is appended to the URL specified in the action attribute
+	• post — The form data is sent to the server as a separate message 
+4. accept: 	A comma-separated list of content types that a server processing this form can handle correctly; most forms do not need this attribute
+5. accept-charset: 	A list of allowed character sets for input data that is accepted by the server processing this form; most forms do not need this attribute
+
+The <form> element by itself does not create a form. It must contain form controls (such as <input> elements) and structural elements such as <p> or <ul> to control the look of the form. CSS style classes let you select different form elements and control their look with style rules.
+
+Some examples:
+===========
+This code specifies that the form data the user enters is being sent to a program named register.asp that resides on a Web server.
+<form method="post" action="https://signup.website.com/register.asp">
+
+Using the mailto Action
+================
+With the mailto action, you can collect data from a form and send it to any e-mail address. Although this method does not allow any data processing, it is fine for the occasional brief form or for simple Web sites. The data is sent as a long string of text, which you can make easier to read by including the enctype="text/plain" attribute. A form element with a mailto action looks like the following:
+<form action="mailto:email@domain.com" method="post" enctype="text/plain">
+
+Input Objects
+==========
+The <input> element defines many of the form input object types. You use the type attribute to specify the object type.
+
+Available object types. 
+type		description
+=====		========
+1. text 	Creates a text entry field that lets the user enter a single word or a line of text; this is the default object type
+2. password 	Creates the same type of text entry field created by the value "text", but the user entry is masked by asterisks
+3. checkbox 	Provides on/off toggles that the user selects; check boxes are best used with multiple-answer questions, and multiple check boxes can contain the same name, letting you group them together so that users can select multiple values for the same property.
+4. radio 	Lets a user choose one value from a range of values; when radio buttons are grouped together with the same name, only one choice can be selected
+5. submit	 Sends the form data to the server using the transmission method specified in the <form> element; every form needs a submit button
+6. reset 	Clears the form of any user-entered data and returns it to its original state
+7. hidden 	Adds a control that is not displayed in the browser; the hidden type is useful for sending additional information with the form data that may be needed for processing
+8. image 	Adds a graphic button to the form, rather than the default button
+9. button 	Creates a button that has no default behavior; the button’s function is usually defined by a script; when the user pushes the button, the script function is triggered 
+10. file 	Lets the user select a file that is submitted with the form
+
+New input types and attributes in HTML5
+=============================
+<input type="number"/> (Spinner)
+=================
+This input type lets you collect a number (either integer or floating point). 
+<input type="number" min="0" max="20" step="2" value="10" name="some-name"/> 
+
+Attrbiutes:
+========
+You should normally supply all of value, min, and max. Browsers that support this input type give inconsistent behavior when these attributes are omitted. If you want to collect floating point numbers, use a non-integer for min or step. 
+• value: The initial value. If omitted, the field is initially blank, but the internal value is not consistent across browsers.
+• step: How much to change the value when you click on the up or down arrows of the control. The default is 1.
+• min, max: The smallest and largest values that can be selected with the up/down arrows. However, Chrome lets you type values outside that range directly into the textfield, and then gives no error when you submit. Opera also lets you type values outside the range, but gives an error when you try to submit. However, the Opera error message incorrectly refers to the maximum value, so is of little use in the current version. 
+
+<input type="range"/> (Slider)
+================
+This input type lets you collect a number (either integer or floating point). The exact value is not displayed to the user unless you use JavaScript. So, use the number (spinner) input type if you want to let the user choose an exact value. 
+<input type="range" name="some-name"/> 
+
+Attributes:
+==========
+Unlike with the number (spinner) input type, the range (slider) input type has reasonable defaults for min, max, step, and value. If you want to collect floating point numbers, use a non-integer for min or step. 
+• value: The initial value. The default is halfway between the min and the max.
+• step: How much to change the value when you click on the up or down arrows of the control. The default is 1.
+• min, max: The smallest and largest values that can be selected. The default for min is 0, and the the default for max is 100.
+
+<input type="date"/> (Pop-up Calendar)
+===============
+This input type lets you collect a date. There are also closely related elements to let you select a month (input type="month"), week (input type="week"), time (input type="time"), date and time in global format (input type="datetime"), and date and time in local format/timezone (input type="datetime-local").
+
+<input type="date" name="some-name"/> 
+Attributes:
+========
+• value: The initial value. The format is "yyyy-mm-dd".
+• step: The step size in days. The default is 1.
+• min, max: The smallest and largest dates that can be selected, formatted as date strings of the form "yyyy-mm-dd".
+
+
+<input type="color"/> (Color Chooser)
+================
+This input type lets you collect a color of the form #rrggbb. If a browser supports this input type, the intention is that clicking in the textfield will result in a color chooser popping up. 
+
+<input type="color" name="some-name"/> 
+
+Attributes:
+========
+• value: The initial value. The intention is that if a browser pops up a color chooser, the initial selection will match the current value.
+
+<input type="..." list="some-id"/> (Autocomplete/Suggest Box)
+========================
+Adding the "list" attribute lets you add autocomplete behavior to most of the text-oriented input types (reqular textfields, email, URL, search, etc.)
+
+input type="text (or other)" list="some-id" name="some-name"/>
+ <datalist id="email-choices">
+ <option label="Display Val 1" value="Insert Val 1">
+ <option label="Display Val 2" value="Insert Val 2">
+ <option label="Display Val 3" value="Insert Val 3">
+ ...
+ </datalist>
+
+Attributes:
+========
+The input element
+• list: The id of a separate "datalist" element that defines a list of choices for the user to choose among.
+
+The option element (inside "datalist")
+• label: Extra information that may be displayed in the autocomplete list. Browsers might show this label or a combination of the label and the value. The label is never part of the value that is inserted into the textfield when the entry is selected.
+• value: The value that should be inserted into the textfield when the entry is selected.
+
+
+<input type="email"/> (Email Entry)
+================
+This input type lets you collect an email address. If the "list" attribute is not specified, then the intention is that the browser supplies some help in entering a legal email address (e.g., the iPhone browser uses an email-optimized keyboard) and/or validation on submission.
+
+<input type="email" name="some-name"/>
+ <input type="email" list="email-choices" name="some-name"/>
+ <datalist id="email-choices">
+ <option label="Marty Hall" value="hall@coreservlets.com">
+ <option label="Somebody Else" value="someone@example.com">
+ <option label="Third Person" value="other@example.com">
+ ...
+ </datalist> 
+
+Attributes:
+========
+If you supply the "list" attribute, you must also supply a separate "datalist" entry. 
+• value: The initial value (a legal email address).
+• list: The id of a separate "datalist" element that defines a list of email addresses for the user to choose among.
+
+
+<input type="url"/> (URL Entry)
+==============
+This input type lets you collect an absolute URL. If the "list" attribute is not specified, then the intention is that the browser supplies some help in entering a legal URL (e.g., the iPhone browser uses a URL-optimized keyboard) and/or validation on submission.
+
+<input type="url" name="some-name"/>
+ <input type="url" list="url-choices" name="some-name"/>
+ <datalist id="url-choices">
+ <option label="HTML5 Spec" value="http://dev.w3.org/html5/spec/">
+ <option label="Some other URL" value="http://example.com/blah.html">
+ <option label="Yet Another URL" value="http://foo.bar.com/baz.html">
+ ...
+ </datalist> 
+
+Attributes:
+========
+If you supply the "list" attribute, you must also supply a separate "datalist" entry. 
+• value: The initial value, as an absolute URL.
+• list: The id of a separate "datalist" element that defines a list of URLs for the user to choose among.
+
+
+<input type="tel"/> (Telephone Input)
+=============
+This input type is intended to help you collect a telephone number. However, since the format of telephone numbers is not specified, it is not clear how a normal browser would help you with this.
+
+<input type="tel" name="some-name"/> 
+
+Attributes:
+========
+• value: The initial value as a phone number.
+<input type="search"/> (Search Query Input)
+=================
+This input type is intended to help you collect a string for a search. Since search queries are free-form text, there is never any help in inputting characters, and never any validation on submission.
+
+<input type="search" name="some-name"/> 
+
+Attributes:
+========
+• value: The initial value.
+
+
+++++ Attributes ++++
+<input type="..." placeholder="some text"/> (Textfields with Temporary Hints)
+===============================
+Adding the "placeholder" attribute lets you add a hint inside the textfield, but where the hint automatically disappears when you click inside it.
+
+<input type="text (or other)" placeholder="some text" name="some-name"/> 
+
+Attributes:
+========
+The input element
+• placeholder: A small hint. This differs from the "value" attribute in two ways. First, it will usually be rendered differently (e.g., light gray). Second, it will automatically disappear when you click in the textfield.
+• value: The initial value. If you have both placeholder and value, the value wins, and placeholder is ignored.
+
+
+<input type="..." pattern="some regular expression"/>
+=====================================
+Adding the "pattern" attribute lets you specify a regular expression (in JavaScript RegEx format) for legal values. This is particularly useful when the legal pattern is clear from the prompt, or when you use "placeholder" to describe the pattern.
+
+<input type="text (or other)" pattern="some regexp" name="some-name"/> 
+
+Attributes:
+========
+• pattern: A JavaScript regular expression.
+
+ (Pattern-Validating Textfields)
+=====================
+<input type="..." required/> (Textfields with Required [Non-Empty] Values)
+
+Adding the "required" attribute lets you specify that the user must enter a value before submitting the form.
+
+<input type="text (or other)" required name="some-name"/> 
+
+Attributes:
+========
+• required: A flag indicating that empty textfield values are illegal. HTML5 does not follow XML syntax, so it is perfectly legal to just do  <input ... required .../>
+ However, if you prefer to supply attribute values, you can do
+ <input ... required="required" .../>
+ However, "true" is not a legal value, so it is illegal to do
+ <input ... required="true" .../>
+
+
+Labeling Form Elements
+=================
+The <label> element lets you create a caption for an input element. 
+For example, the label element next to both text and check box elements.
+
+<p>
+<label class="username" >First Name:</label>
+<input type="text" name="firstname" size="35" maxlength="35" />
+</p>
+
+To make the text clickable, you associate the <label> element with the <input> element by using the for and id attributes as shown in the following code.
+<p>
+<label class="username" for="firstname">
+First Name:</label>
+<input type="text" name="firstname" id="firstname" size="35" maxlength="35" />
+</p>
+
+The for attribute in the <label> element must match the id attribute in the <input> element to associate the text with the input element.
+
+Creating Text Boxes
+==============
+The text entry box is the most commonly used <form> input type. The default text box is 20 characters long, although you can change this value using the size attribute. The user can enter an unlimited number of characters in the text box even though they exceed the visible length. You can constrain the user’s entry
+of text with the maxlength attribute and supply a default value for the text with the value attribute. The following code shows a simple form with two text boxes.
+
+<form action="http://server.com/cgi_bin/script.cgi" method="post">
+<p>Tell us who you are:</p>
+<p>
+<label class="username" for="First Name">
+First Name: </label>
+<input type="text" name="firstname" id="First Name" size="35" maxlength="35" /></p>
+<p>
+<label class="username" for="Last Name">
+Last Name: </label>
+<input type="text" name="lastname" id="Last Name" size="35" maxlength="35" /></p>
+</form>
+
+Creating Check Boxes
+================
+Check boxes are on/off toggles that the user can select. You can use the name attribute to group check boxes, allowing the user to select multiple values for the same property. 
+Example of a group of check boxes.
+<ul>
+<li><input type="checkbox" name="species" value="smbass" id="Smallmouth Bass" />
+<label for="Smallmouth Bass">Smallmouth Bass</label> </li>
+<li><input type="checkbox" name="species" value="lgbass" id="Largemouth Bass" />
+<label for="Largemouth Bass">Largemouth Bass</label></li>
+<li><input type="checkbox" name="species" value="crappie" id="Crappie" />
+<label for="Crappie">Crappie</label> </li>
+<li><input type="checkbox" name="species" value="walleye" id="Walleye" />
+<label for="Walleye">Walleye</label> </li>
+<li> <input type="checkbox" name="species" value="muskie" id="Muskie" />
+<label for="Muskie">Muskie</label> </li>
+<li> <input type="checkbox" name="species" value="pike" id="Pike" />
+<label for="Pike" />Pike</label></li>
+</ul>
+
+To check a check box by default, you can use the checked attribute.  
+<input type="checkbox" name="species" value="pike" checked="checked" />
+
+Creating Radio Buttons
+================
+Radio buttons are like check boxes, but only one selection is allowed. When radio buttons are grouped with the name attribute, only one value can be selected to be "on", while all other values must be "off". To preselect one of the radio buttons, you use the checked attribute.
+
+<p>Would you like to be on our mailing list?</p>
+<p><input type="radio" name="list" value="yes" id="Yes" />
+<label for="Yes">Yes</label>
+<input type="radio" name="list" value="no" id="No" />
+<label for="No">No</label>
+</p>
+
+Creating Submit and Reset Buttons
+=========================
+The submit and reset button input types let the user either send the form data to be processed or clear the form and start over. These are predefined functions that are activated by the button type. Set the input type to either submit or reset. The default button text values are Submit Query and Reset. You can use the value attribute to customize the button text. 
+
+<p>
+<input type="submit" value="Submit your answers" />
+<input type="reset" value="Clear the form" />
+</p>
+
+Letting the User Submit a File
+=====================
+The file input type object lets users select a file on their own computers and send it to the server. This type lets you create a text input area for the user to enter a filename. The length of the text input is specified with the size attribute. The file type automatically includes a browse button that lets users browse for a file
+on their computer. 
+
+<p>Use the browse button to select your file:</p>
+<p><input type="file" size="30" /></p>
+
+Creating a Password Entry Field
+======================
+The password input type object works like a text input box, with the additional feature that the entered text is hidden by asterisks rather than shown on the screen.
+
+<p>Enter your user name and password:</p>
+<p>
+User Name: <input type="text" size="30" />
+Password: <input type="password" size="30" />
+</p>
+
+Using the <select> Element
+====================
+The <select> element lets you create a list box or scrollable list of selectable options. The <select> element is a container for the <option> element. Each <option> element contains a list value.
+
+<p>If you own a boat, select the type:</p>
+<p>
+<select name="boats">
+<option value="canoe">Canoe</option>
+<option value="jon_boat">Jon Boat</option>
+<option value="kayak">Kayak</option>
+<option value="bass_boat" selected="selected">Bass Boat</option>
+<option value="family_boat">Family Boat</option>
+</select>
+</p>
+
+
+You can also let the user pick multiple values from the list by adding the multiple attribute to the <select> element. The user can hold the Ctrl key and select multiple items in the list, or hold the Shift key to select contiguous options.
+
+<p>Select your favorite kinds of snacks. <em>(Hold
+the CTRL key and click to pick more than one.)</em></p>
+<p>
+<select name="snacks" multiple="multiple" size="6">
+<option>Potato Chips</option>
+<option>Popcorn</option>
+<option>Peanuts</option>
+<option>Pretzels</option>
+<option>Nachos</option>
+<option>Pizza</option>
+<option>Fries</option>
+</select>
+</p>
+
+
+Grouping List Options
+================
+You can group and label sets of list options with the <optgroup> element and label attribute. The result is a heading for a series of options within a list. 
+
+<p>
+<select name="snacks" multiple size="7">
+<optgroup label="Salty Snacks">
+<option>Potato Chips</option>
+<option>Popcorn</option>
+<option>Peanuts</option>
+<option>Pretzels</option>
+</optgroup>
+<optgroup label="Hot Snacks">
+<option>Nachos</option>
+<option>Pizza</option>
+<option>Fries</option>
+</optgroup>
+</select>
+</p>
+
+Using the <textarea> Element
+=====================
+The <textarea> element lets you create a text area for user input larger than the <input> text type object described previously.
+
+<p>Briefly tell us your favorite fish story:</p>
+<p>
+<textarea name="fish_story" rows="5" cols="30">
+Enter your story here...
+</textarea>
+</p>
+
+Creating Input Groupings
+==================
+You can use the <fieldset> and <legend> elements to create groupings of different types of <input> elements. The <fieldset> element contains the <input> elements, and the <legend> element contains a label for the grouping
+.
+
+<fieldset>
+<legend>Select the species you prefer to fish:</legend>
+<p>
+<input type="checkbox" name="species" value="small_bass" />Smallmouth Bass
+<input type="checkbox" name="species" value="large_bass" />Largemouth Bass <br/>
+<input type="checkbox" name="species" value="crappie" />Crappie
+<input type="checkbox" name="species" value="walleye" />Walleye
+<input type="checkbox" name="species" value="muskie" />Muskie
+<input type="checkbox" name="species" value="pike" />Pike
+</p>
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lab - Liquid layout example
+
