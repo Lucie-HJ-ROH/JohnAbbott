@@ -1,9 +1,0 @@
-<!-- declare the root element contacts -->
-<!ELEMENT contacts (sales, customerservices) >
-<!ELEMENT sales (lastname, firstname, phone, fax?, email) >
-<!ELEMENT customerservices (lastname, firstname, phone, fax?,email) >
-<!ELEMENT lastname (#PCDATA) >
-<!ELEMENT firstname (#PCDATA) >
-<!ELEMENT phone (#PCDATA) >
-<!ELEMENT email (#PCDATA) >
-<!ELEMENT fax (#PCDATA) >
