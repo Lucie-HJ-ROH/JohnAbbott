@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://reza.org/Patient"
+        xmlns:tns = "http://reza.org/Patient"
+        elementFormDefault="qualified">
+
+    <element name="patient" type="tns:Patient"/>
+
+
+    <complexType name="Patient">
+        <sequence>
+            <element name="id" type="integer"/>
+            <element name="name" type="string"/>
+            <element name="age" type="integer"/>
+            <element name="dob" type ="date"/>
+            <element name="email" type ="string"/>
+            <element name="phone" type ="integer"/>
+        </sequence>
+    </complexType>
+</schema>
