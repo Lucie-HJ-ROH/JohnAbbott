@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Message</title>
+    <script>
+        /* Purpose: Prompt the user to enter her/his name, then display
+          a greeting message: Good morning, Good afternoon, or
+         Good evening + the name entered, then the welcoming message
+         */
+
+        /* 1. Declaration Phase */
+        let name;        // string entered by the user
+        let today;       // an instance (copy) of the date object
+        let message;     // the greeting message
+        let theHour;     // extracted fron the today current hour 
+
+        /* 2. Initialization Phase */
+        // read the name from the prompt box as a string
+        name = window.prompt('Please enter your name', 'John');
+        today = new Date();
+        message = ' welcome to our website.';
+
+        // extract hout from tofay object   
+        theHour = today.getHours();
+        // window.alert(theHour);
+
+        /* 3. Processing Phase */
+        // determine whether it is morning 
+        if (theHour < 12) {
+            document.write('<h2>Good morning ');
+        } // end if block
+
+        // deternine whether it is after am
+        if (theHour >= 12) {
+            // convert to a 12-hour format
+            theHour = theHour - 12;
+
+            // determine whether it is before 6 pm
+            if (theHour < 6) {
+                document.write('<h2>Good afternoon ');
+            } // end inner if block
+            else {
+                // if the hour is after 6 pm
+                document.write('<h2>Good evening ');
+            } // end esle block
+        } // end outer if block
+
+        /* 4. Termination (output) Phase */
+        document.writeln(name + ', '  + message + '</h2>')        ;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

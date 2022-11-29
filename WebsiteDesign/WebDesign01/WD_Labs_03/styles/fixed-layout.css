@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* CSS document for the Fixed-Layout web page 
+Developed by: Khattar Daou
+Script dat: July4, 2022
+*/
+
+/* reset the layout */
+* {
+    margin: 0;
+    padding: o;
+}
+
+
+/* styling the body selector */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    background-color: #808080;
+}
+
+/* styling container id selector */
+#container {
+    width: 960px;
+    /* Order for the box model: margin, border, and padding */
+    margin: 0 auto;
+    border: 1px solid #000080;
+}
+
+/* styling the header selector */
+#header {
+    width: 940px;
+    /* TRBL */
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #ff0;
+    height: 75px;
+}
+
+/* styling the nav selector */
+#top-nav {
+    width: 940px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #c0c0c0;
+    height: 25px;
+}
+
+/* styling the list items inside the nav menu */
+#top-nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+/* styling anchor selectors inside top-nav */
+#top-nav ul li a {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* apply pseudo-class (
+    selector:pseudo-class_name { } 
+    selector::pseudo-element {} 
+:link (when a link is not visited yet)
+:visited (when a link was visited)
+:hover (when you move the cursor over a link)
+:active (click and hold down the mouse )
+
+To remember the order LoVeHAte)
+*/
+#top-nav ul li a:link {
+    background-color: #999;
+    color: blue;
+    text-decoration: none;
+}
+
+#top-nav ul li a:visited {
+    color: magenta;
+} 
+
+#top-nav ul li a:hover {
+    text-decoration: underline;
+    background-color: darkblue;
+    color: darkgray;
+}
+
+#top-nav ul li a:active {
+    color: #0f0;
+}
+
+/* styling the left sidebar */
+#left-sidebar {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    background-color: #ffaf00;
+    height: 400px;
+    float: left;
+}
+
+/* styling the main selector */
+#main {
+    width: 60%;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #0ff;
+    height: 400px;
+    float: left;
+}
+
+/* styling the right sidebar */
+#right-sidebar {
+    width: 150px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    background-color: #ffaf00;
+    height: 400px;
+    float: right;
+}
+
+/* styling the foote selector */
+#footer {
+    width: 940px;
+    padding: 10px;
+    background-color: #0f0;
+    height: 75px;
+    clear: both;
+}

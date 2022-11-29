@@ -1,0 +1,404 @@
+.home {
+    background: url(../images/home-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar-default {
+    position: fixed;
+    top:0px;
+    z-index: 1030;
+    width:100%;
+    height: 75px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgb(50 50 50 / 8%);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    float:left!important;
+    padding-left: 30px;
+}
+
+.navbar-nav {
+    float:right!important;
+    margin-right: 50px;;
+    list-style: none;
+}
+
+.navbar-nav>li {
+    float: left;
+    position: relative;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #d7a486;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-decoration: none; 
+  }
+
+  .navbar-default .navbar-nav li a:hover { color: #eb5424; }
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #eb5424;
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #eb5424;
+    background-color: transparent;
+  }
+
+.home-main-title {
+    font-size: 60px;
+    color: rgb(95, 95, 95);
+}
+
+.home-main-title, .home-main-subtitle {
+    text-transform: uppercase;
+}
+
+.home-main-subtitle {
+    color:rgb(235, 84, 36)
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.home-main-detail {
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index: 1030;
+}
+
+.works-main-table {
+    width:1200px;
+    height:600px;
+    background-color: #fff;
+    opacity: 0.8;
+
+}
+.works-main-title {
+   text-align: left;
+   font-size: 48px;
+   height:100px;
+   border-bottom: 1px solid rgb(235, 84, 36);
+}
+
+.works-main-title-works {
+    font-weight: bolder;
+}
+
+.works-main-icon {
+    height: 100px;
+    width: 150px;
+    font-size: 100px;
+    color: rgb(235, 84, 36);
+    border-left: 1px solid rgb(235, 84, 36);
+    border-right: 1px solid rgb(235, 84, 36);
+    padding-top: 30px;
+}
+
+.works-main-highlevel {
+    height: 50px;
+    width: 150px;
+    border-left: 1px solid rgb(235, 84, 36);
+    border-right: 1px solid rgb(235, 84, 36);
+    border-width: 10PX;
+}
+
+.works-main-detail {
+    height: 350px;
+    width: 150px;
+    font-size: 18px;
+    border-left: 1px solid rgb(235, 84, 36);
+    border-right: 1px solid rgb(235, 84, 36);
+    border-bottom: 1px solid rgb(235, 84, 36);
+    text-align: left;
+  }
+
+  .skills-main-container {
+      width: 50%;
+  }
+
+ .skills-main-title {
+    text-align: left;
+    font-size: 48px;
+ }
+ 
+ .skills-main-title-some {
+     font-weight: bolder;
+ }
+
+ .tm-progress-label {
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 10px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.progress-percent-small {
+    display: block;
+    float: right;
+    padding-right: 20px;
+}
+
+.tm-progress {
+    background: #fff;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.progress {
+    height: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.progress-bar-danger {
+    background-color: #d9534f;
+    /* animation-name: process-bar;
+    animation-duration: 3s; */
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #d9534f;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    transition: width 2s;
+    
+}
+@keyframes process-bar-100{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 100%;}
+}
+@keyframes process-bar-90{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 90%;}
+}
+@keyframes process-bar-98{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 98%;}
+}
+@keyframes process-bar-80{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 80%;}
+}
+@keyframes process-bar-75{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 75%;}
+}
+@keyframes process-bar-60{
+    from{background-color: #fff;width: 0;}
+    to{background-color: #d9534f;width: 60%;}
+}
+.progress-bar:hover{
+    background-color:#FF9F55;
+}
+
+.contact-main {
+    width:1200px;
+    height:600px;
+    background-color: #fff;
+    padding-left:80px;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-main-left {
+   width:50%;
+   height:200px;
+   text-align: left; 
+   padding-left: 10% ;
+}
+.contact-main-title {
+    font-size:24px;
+}
+.contact-main-right {
+    width:50%;
+    height:200px;
+    text-align: left; 
+    padding-right: 10%;
+ }
+
+ .contact-main-right .name{
+    float:left;
+    margin:5px;
+ }
+ 
+ .contact-main-right .email{
+    float:left;
+    margin:5px;
+ }
+ .contact-main-right .phone{
+    float:left;
+    width:100%;
+    margin:5px;
+ }
+ .contact-main-right .message{
+    float:left;
+    width:100%;
+    margin:5px;
+ }
+ .contact-main-right .btn{
+    float:left;
+    width:60%;
+    /* text-align: center; */
+    padding-left: 5px;
+ }
+ .contact-para {
+     border:2px solid #FF9F55;
+     margin-right: 50px;
+     font-size:16px;
+     padding:20px;
+     background-color: #FF9F55;
+ }
+.btn>Button:hover{
+    background-color:#FF9F55;
+}
+ .edu-main-container {
+    width:90%;
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: 200px;
+  }
+ 
+ .timeline {
+    position: relative;
+    max-width: 1200px;
+    height:700px;
+    margin: 0 auto;
+ }
+ 
+ .timeline::after {
+     content: '';
+     position: absolute;
+     width: 6px;
+     background-color:#d9534f;
+     top: 0;
+     bottom: 0;
+     left: 50%;
+     margin-left: -3px;
+   }
+   
+ .timeline .tl-container {
+     padding: 10px 40px;
+     position: relative;
+     width: 50%;
+   }
+ 
+  .timeline .tl-container::after {
+     content: '';
+     position: absolute;
+     width: 25px;
+     height: 25px;
+     right: -17px;
+     background-color: #d9534f;
+     border: 2px solid #FF9F55;
+     top: 15px;
+     border-radius: 50%;
+     z-index: 1;
+   }
+   
+.tl-container::after:hover{
+    background-color: #FF9F55;
+}
+
+   /* Place the container to the left */
+ .timeline .tl-left {
+     left: -82px;
+   }
+   
+   /* Place the container to the right */
+ .timeline .tl-right {
+     left: 50%;
+   }
+ 
+   /* Add arrows to the left container (pointing right) */
+ .timeline .tl-left::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     right: 30px;
+     border: medium solid #d9534f;
+     border-width: 10px 0 10px 10px;
+     border-color: transparent transparent transparent #d9534f;
+   }
+   
+   /* Add arrows to the right container (pointing left) */
+ .timeline .tl-right::before {
+     content: " ";
+     height: 0;
+     position: absolute;
+     top: 22px;
+     width: 0;
+     z-index: 1;
+     left: 30px;
+     border: medium solid #d9534f;;
+     border-width: 10px 10px 10px 0;
+     border-color: transparent #d9534f transparent transparent;
+   }
+   
+   /* Fix the circle for containers on the right side */
+   .timeline .tl-right::after {
+     left: -14px;
+   }
+   
+   .timeline  .tl-container .tl-content {
+     padding: 20px 30px;
+     border: 1px solid #d9534f;
+     position: relative;
+     border-radius: 6px;
+   }
+ div.tl-content:hover {
+     background-color:#eb5424;
+ }
+ 

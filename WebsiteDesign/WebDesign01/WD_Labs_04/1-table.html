@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table</title>
+    <style>
+        table, th, td {
+            border:1px solid blue;
+            border-collapse: collapse;
+        }
+
+        col {
+            text-align: right;
+            background-color: #ff0;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Camel Comparison Table</caption>
+        <!-- use colgroup and col to format entire columns-->
+        <colgroup>
+            <!-- span attribute determines how many colums
+            the col element affetcs -->
+            <col span="2" />
+        </colgroup>
+        <thead>
+            <tr>
+                <!-- merge two rows -->
+                <th rowspan="2">
+                    <img src="images/camel.gif" alt="Picture of a camel" title="Picture of a camel" width="205" height="175" />
+                </th>
+                <!-- merge four columns -->
+                <th colspan="4">
+                    Camel Comparison <br /> Approximate of 9/2002</th>
+                </th>
+            </tr>
+            <tr>
+                <th># of Humps</th>
+                <th>Indigenous Region</th>
+                <th>Spits?</th>
+                <th>Produce Wool?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Camels (Bacterian)</td>
+                <td>2</td>
+                <td>Africa / Asia</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Llamas</td>
+                <td>1</td>
+                <td>Andes Mountain</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+    <section>
+        <h2></h2>
+    </section>
+    <article>
+        <h2></h2>
+    </article>
+</body>
+</html>

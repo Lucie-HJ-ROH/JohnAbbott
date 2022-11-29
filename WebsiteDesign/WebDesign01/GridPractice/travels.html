@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/travels.css"/>
+</head>
+<body>
+<div class="header">
+    <h1>Share Your Travels</h1>
+    <h4>let us know where you've been</h4>
+</div>
+
+<div class = "main">
+    <div class="container">
+        <div class="photodetail"> PHOTO DETAILS</div>
+        <div class="title_text">
+            <label for="title">Title</label>
+            <br>
+            <input type="text" id="title"
+                   placeholder="Give your photo a descriptive name"/>
+        </div>
+
+        <div class="description_text">
+            <label for="description">Description</label>
+            <br>
+            <textarea id="description" cols="165" rows="4"
+                      placeholder="Adding a rich description will help with search result"></textarea>
+
+        </div>
+        <div class = "address">
+            <div class="continent">
+                <label for="continent_select">Continent</label>
+                <br>
+                <select id="continent_select">
+                    <option value="" disabled selected>Choose continent</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                </select>
+            </div>
+            <div class="country">
+                <label for="country_select">Country</label>
+                <br>
+                <select id="country_select">
+                    <option value="" disabled selected>Choose Country</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>
+            <div class="city">
+
+                <label for="city_select">City</label>
+                <br>
+                <select id="city_select">
+                    <option style="display: none"></option>
+                    <option value="Calgary">Calgary</option>
+                    <option value="Montreal">Montreal</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Vancouver">Vancouver</option>
+                </select>
+            </div>
+
+
+        </div>
+
+        <div class="copy_box">
+            <div class="copyright">
+                <label>Copy right?</label>
+                <br>
+                <input type="radio" name="copy_right" id="all" value="all_right"/>
+                <label for="all">All rights reserved</label>
+                <br/>
+                <input type="radio" name="copy_right" id="creative" value="creative"/>
+                <label for="creative">Creative Commons</label>
+            </div>
+            <div class="types">
+                <label>Creative Commons Types</label>
+                <br>
+                <input type="checkbox" id="attribution" value="attribution"/>
+                <label for="attribution">Attribution</label>
+                <br/>
+                <input type="checkbox" id="noncommercial" value="noncommercial"/>
+                <label for="noncommercial">Noncommercial</label>
+                <br/>
+                <input type="checkbox" id="No_DerivativeWorks" value="american_express"/>
+                <label for="No_DerivativeWorks">No Derivative Works</label>
+                <br/>
+            </div>
+        </div>
+        <div class  = "accept">
+            <label for="No_DerivativeWorks">I accept the software license</label>
+            <input type="checkbox" id="license" value="license"/>
+        </div>
+
+        <div class = "photocolor">
+            <div class="rate_photo">
+                <label for="rate_photo_text">Rate this photo</label>
+                <br>
+                <input type="text" id="rate_photo_text"/>
+            </div>
+            <div class="color_picker">
+                <label for="color_picker">Color Collection:</label>
+                <br>
+                <input type="color" id="color_picker"/>
+            </div>
+        </div>
+
+
+        <div class="date_box">
+            <div class="datetake">
+                <label for="Date_taken">Date taken: </label>
+                <br>
+                <input type="date" id="Date_taken"/>
+            </div>
+            <div class="timetake">
+                <label for="time_taken">Time Taken: </label>
+                <br>
+                <input type="time" id="time_taken"/>
+            </div>
+
+
+
+    </div>
+
+        <div class  = "buttonfield">
+            <input type="submit" id="submit_form" value="Submit"/>
+            <input type="reset" id="clear_form" value="Clear Form"/>
+        </div>
+</div>
+
+
+</body>
+</html>

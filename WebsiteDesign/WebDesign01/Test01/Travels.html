@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Travels</title>
+    <link rel="stylesheet" href="styles/travels.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+<div id="container">
+    <header id="header">
+        <h1>Share Your Travels</h1>
+        <h4>let us know where you've been</h4>
+    </header>
+
+    <main id="main">
+
+        <form id="hotel_reservation" method="post" action="Travel-form-completed.html" autocomplete="off">
+            <fieldset>
+                <table id="main_table">
+                    <tr>
+                        <th colspan="2">PHOTO DETAILS</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="td_title">
+                            <label for="title">Title</label>
+                            <br>
+                            <input type="text" id="title" size="200" maxlength="100"
+                                   placeholder="Give your photo a descriptive name"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="td_description">
+                            <label for="description">Description</label>
+                            <br>
+                            <textarea id="description" cols="165" rows="4"
+                                      placeholder="Adding a rich description will help with search result"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="continent">Continent</label>
+                            <br>
+                            <select id="continent">
+                                <option value="" disabled selected>Choose continent</option>
+                                <option value="Africa">Africa</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Europe">Europe</option>
+                                <option value="North America">North America</option>
+                                <option value="South America">South America</option>
+                            </select>
+                        </td>
+                        <td id="td_all">
+                            <label>Copy right?</label>
+                            <br>
+                            <input type="radio" name="copy_right" id="all" value="all_right"/>
+                            <label for="all">All rights reserved</label>
+                            <br/>
+                            <input type="radio" name="copy_right" id="creative" value="creative"/>
+                            <label for="creative">Creative Commons</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">Country</label>
+                            <br>
+                            <select id="country">
+                                <option value="" disabled selected>Choose Country</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="United States">United States</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">City</label>
+                            <br>
+                            <select id="city">
+                                <option style="display: none"></option>
+                                <option value="Calgary">Calgary</option>
+                                <option value="Montreal">Montreal</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="Vancouver">Vancouver</option>
+                            </select>
+                        </td>
+                        <td id = "td_types">
+                            <label>Creative Commons Types</label>
+                            <br>
+                            <input type="checkbox" id="attribution" value="attribution"/>
+                            <label for="attribution">Attribution</label>
+                            <br/>
+                            <input type="checkbox" id="noncommercial" value="noncommercial"/>
+                            <label for="noncommercial">Noncommercial</label>
+                            <br/>
+                            <input type="checkbox" id="No_DerivativeWorks" value="american_express"/>
+                            <label for="No_DerivativeWorks">No Derivative Works</label>
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="td_license">
+                            <label for="No_DerivativeWorks">I accept the software license</label>
+                            <input type="checkbox" id="license" value="license"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rate_photo">Rate this photo</label>
+                            <br>
+                            <input type="text" id="rate_photo"/>
+                        </td>
+                        <td>
+                            <label for="Date_taken">Date taken: </label>
+                            <br>
+                            <input type="date" id="Date_taken"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="color_picker">Color Collection:</label>
+                            <br>
+                            <input type="color" id="color_picker"/>
+                        </td>
+                        <td>
+                            <label for="time_taken">Time Taken: </label>
+                            <br>
+                            <input type="time" id="time_taken"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" id="submit_reservation" value="Submit"/>
+                            <input type="reset" id="clear_form" value="Clear Form"/>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+
+        </form>
+    </main>
+
+</div>
+
+</body>
+
+</html>

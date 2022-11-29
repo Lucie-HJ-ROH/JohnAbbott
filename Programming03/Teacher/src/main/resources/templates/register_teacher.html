@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TEACHER PORTAL</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1>Teacher Registration Form by Jingyu An</h1>
+      </div>
+      <form th:action="@{/save_teacher}" th:object="${teacher}"
+            method="post" style="max-width: 800px; margin: 0 auto;">
+        <div class="m-3">
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Staff ID: </label>
+            <div class="col-8">
+              <input type="text" th:field="*{id}" class="form-control" placeholder="Enter Staff ID"/>
+              <span th:if="${#fields.hasErrors('id')}" th:errors="*{id}" class="error"></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Name: </label>
+            <div class="col-8">
+              <input type="text" th:field="*{name}" class="form-control" placeholder="Enter full name"/>
+              <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error"></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label">E-mail: </label>
+            <div class="col-8">
+              <input type="email" th:field="*{email}" class="form-control" placeholder="sample@exmaple.com"/>
+              <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="error"></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Date Of Birth: </label>
+            <div class="col-8">
+              <input type="date" th:field="*{birthDate}" class="form-control"/>
+              <span th:if="${#fields.hasErrors('birthDate')}" th:errors="*{birthDate}" class="error"></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Cellphone: </label>
+            <div class="col-8">
+              <input type="tel" th:field="*{phone}" class="form-control" placeholder="43xxxxxx"/>
+              <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" class="error"></span>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-4 col-form-label">Password: </label>
+            <div class="col-8">
+              <input type="password" th:field="*{password}" class="form-control"/>
+              <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="error"></span>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

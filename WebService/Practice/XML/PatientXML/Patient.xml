@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tns:patient xmlns="http://www.reza.org/Patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.reza.org/Patient">
+    <tns:id>12345</tns:id>
+    <tns:name>tns:James</tns:name>
+    <tns:age>18</tns:age>
+    <tns:dob>2001-01-01</tns:dob>
+    <tns:email>tns:JS@example.com</tns:email>
+    <tns:gender>tns:man</tns:gender>
+    <tns:phone>0123456789</tns:phone>
+</tns:patient>
+

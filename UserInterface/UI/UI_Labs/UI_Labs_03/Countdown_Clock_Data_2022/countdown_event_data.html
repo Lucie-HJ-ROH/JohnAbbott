@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dixon's New Year's Bash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link to an external style countdown_event.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/countdown_event.css" />
+    <!-- link to an external script countdown_event.js -->
+    <script src="scripts/countdown_event.js"></script>
+    <script>
+            window.addEventListener('load', setInterval('eventClock()', 1000));
+    </script>
+</head>
+
+<!-- <body onload="window.setInterval('eventClock()', 1000);"> -->
+<body>
+    <div id="container">
+        <form id="clockform" name="clockform" action="#">
+            <div id="clock">
+                <h4>Time</h4>
+                <p>
+                    <label for="txtDateNow">Today</label>
+                    <input type="text" size="12" id="txtDateNow" name="txtDateNow" readonly/><br />
+                    <img src="images/clock.jpg" id="sand_timer" alt="Clock" title="Clock" />
+                    <br />
+                    <label for="txtTimeNow">Time</label>
+                    <input type="text" size="12" id="txtTimeNow" name="txtTimeNow" readonly />
+                </p>
+            </div>
+
+            <div id="logo">
+                <img src="images/logo.jpg" alt="New Years Bash" />
+            </div>
+
+            <div id="countdown">
+                <h4>Countdown</h4>
+                <p>
+                    <input type="text" size="3" id="txtDaysLeft" name="txtDaysLeft" />
+                    <label for="txtDaysLeft">Days</label>
+                    <br />
+                    <input type="text" size="3" id="txtHrLeft" name="txtHrLeft" />
+                    <label for="txtHrLeft">Hours</label>
+                    <br />
+                    <input type="text" size="3" id="txtMinLeft" name="txtMinLeft" />
+                    <label for="txtMinLeft">Minutes</label>
+                    <br />
+                    <input type="text" size="3" id="txtSecLeft" name="txtSecLeft" />
+                    <label for="txtSecLeft">Seconds</label>
+                </p>
+            </div>
+
+            <div id="links">
+                <a href="#">FrostiRun</a>
+                <a href="#">Kid's Korner</a>
+                <a href="#">Chester the Jester</a>
+                <a href="#">A Taste of Dixon</a>
+                <a href="#">Winter Art Fair</a>
+                <a href="#">Lester's Blues Band</a>
+                <a href="#">The Jazz Express</a>
+                <a href="#">The Fireworks Show</a>
+                <a href="#">Final Countdown</a>
+            </div>
+
+            <div id="main">
+                <img src="images/photo.jpg" alt="New Year Eve Bash" title="New Year Eve Bash" />
+                <p id="content">
+                    Dixon's New Year's Bash is back for the 22nd year of fun and excitement.
+                    The festivities start on December 31 at noon with the FrostiRun 5K and 10K races. Sign
+                    up now or the morning of the race. Family fun is available at the Kid's Korner with
+                    booths and free activities for the whole family; including performances from Dixon's
+                    own Chester the Jester. The fun continues with A Taste of Dixon as vendors provide
+                    samples from Dixon's best eateries and for the artistically inclined, plan to attend
+                    the Winter Art Fair on Dixon's downtown square.
+                </p>
+                <p>
+                    Music from Lester's Blues Band and The Jazz Express brings us into the New Year.
+                    The dancing starts at 7 p.m. and continues until midnight. From ten to 11 p.m. we say goodbye
+                    to the old year (and ring in the new) with the famous New Year's Bash fireworks spectacular.
+                    Be sure to arrive early for all of the festivities and the final countdown.
+                </p>
+                <footer id="footer">
+                    <address>
+                        New Year's Bash &#183;
+                        340 Main Street, Dixon OK 74381 &#183;
+                        555 - 3481
+                    </address>
+                    <div class="navbar-text pull-right">
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </footer>
+            </div>
+        </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="scripts/bootstrap.min.js"></script>
+
+</body>
+
+</html>

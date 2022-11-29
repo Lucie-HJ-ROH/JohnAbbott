@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-nth-child</title>
+    <style>
+        ul {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: block;
+            padding: 15px;
+        }
+
+        li:nth-child(3n - 1) {
+            background-color: skyblue;
+            color: white;
+        }
+
+        li:nth-child(3n) {
+            background-color: darkslateblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Item 01</li>
+        <li>Item 02</li>
+        <li>Item 03</li>
+        <li>Item 04</li>
+        <li>Item 05</li>
+        <li>Item 06</li>
+        <li>Item 07</li>
+        <li>Item 08</li>
+        <li>Item 09</li>
+        <li>Item 10</li>
+        <li>Item 11</li>
+    </ul>
+</body>
+
+</html>

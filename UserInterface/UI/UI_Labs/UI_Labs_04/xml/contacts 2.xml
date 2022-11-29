@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!DOCTYPE contacts SYSTEM "contacts.dtd">
+<contact>
+    <sales>
+        <lastname>Smith</lastname>
+        <firstname>John</firstname>
+        <phone>5415555555</phone>
+        <fax>51425698745</fax>
+        <email>john.smith@smith.com</email>
+
+    </sales>
+
+    <customerservices>
+        <lastname>Smith</lastname>
+        <firstname>Mary</firstname>
+        <phone>5415555666</phone>
+        <email>john.smith@smith.com</email>
+
+    </customerservices>
+
+</contact>
+

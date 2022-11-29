@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function startup() {
+
+            let inputs = table.getElementsByTagName('input');
+            for (let input of inputs) {
+                alert(input.value + ': ' + input.checked);
+            }
+
+            // change the background color to red
+            document.body.style.background = "red";
+            // change it back after 1 second
+            setTimeout(() => document.body.style.background = "lightgrey", 2000);
+
+
+
+        } // end function startup
+
+
+
+
+        window.addEventListener('load', startup);
+    </script>
+</head>
+
+<body>
+    <table id="table">
+        <tr>
+            <td>Your age:</td>
+            <td>
+                <label>
+                    <input type="radio" name="age" value="young" checked> less than 18
+                </label>
+                <label>
+                    <input type="radio" name="age" value="mature"> from 18 to 50
+                </label>
+                <label>
+                    <input type="radio" name="age" value="senior"> more than 50
+                </label>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

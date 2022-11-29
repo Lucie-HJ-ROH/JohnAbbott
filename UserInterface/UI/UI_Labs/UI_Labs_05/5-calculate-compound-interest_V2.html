@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Compound Interest</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            background-color: lightblue;
+        }
+        table, td, th {
+            border:1px solid #000;
+            padding:4px;
+        }
+
+        th {
+            text-align:left;
+            color:#fff;
+            background-color:darkblue;
+        }
+
+        tr.oddrow {
+            background-color:white;
+        }
+        caption {
+            caption-side: bottom;
+            color: darkblue;
+        }        
+    </style>
+    <script>
+        'use strict';
+        /* Consider the following problem statement:
+        A person invests $1000.00 in a savings account 
+        yielding 5 percent fixed annual interest. Assuming that all 
+        interest is left on deposit in the account, 
+        calculate and print the amount of money in the 
+        account at the end of each year for 10 years. 
+        Use the following formula for determining 
+        these amounts:
+        
+            a = p (1 + r)^n
+        
+        Where
+            p is the present amount invested (i.e., the principal)
+            r is the annual rate,
+            n is the number of years, and
+            a is the amount (future value) on deposit at the end of the nth year         
+            */
+        // we know: principle: $1000.00, rate = 5%, and number of year: 10  
+        // we need to caculate the Future amount of investement
+
+        // decalre variables
+        let principal; // present amount to be invested
+        var INTEREST_RATE; // annual interest rate
+        var yearDeposit;
+
+        let amount; // Future amount of investement
+
+        // initialize variables
+        principal = window.prompt("Enter the pricipal investment", "1000");
+        // cast to float 
+        principal = parseFloat(principal);
+
+        INTEREST_RATE = window.prompt("Enter the annual rate", "0.05");
+        // cast to float 
+        INTEREST_RATE = parseFloat(INTEREST_RATE);
+
+        yearDeposit = window.prompt("Enter the number of years", "10");
+        // cast to int
+        yearDeposit = window.parseInt(yearDeposit);
+
+        // create table 
+        document.write('<table>');
+        document.write('<caption>Calculate Compound Interest</caption>');
+        document.write('<thead><tr><th>Year</th>');
+        document.write('<th>Amount on Deposit</th>');
+        document.write('</tr></thead>');
+        document.write('<tbody>');
+
+        // processing and output
+        // for (let initial_value; condition; increment) {} 
+        for (let year = 1; year <= yearDeposit; year++) {
+            // using the Math.pow() method 
+            //  a = p (1 + r)^n
+            amount = principal * Math.pow((1 + INTEREST_RATE), year);
+
+            if(year % 2 !== 0) {
+            document.writeln('<tr class="oddrow"><td>' + year + '</td><td>'
+                + amount.toFixed(2) +
+                '</td></tr>');
+            } else {
+                document.writeln('<tr><td>' + year + '</td><td>'
+                + amount.toFixed(2) +
+                '</td></tr>');
+            }
+        } // end for loop
+
+        // close table elements
+        document.write('</tbody></table>');
+    </script>
+</head>
+
+<body>
+    <p></p>
+    <p></p>
+    <div id="targetDiv">&nbsp;</div>
+</body>
+
+</html>

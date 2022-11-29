@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button validation</title>
+</head>
+<body>
+    <form onsubmit="return validateRadios('pm');">
+        <input type="radio" name="pm" id="visa" value="visa"/>
+        <label for="visa">Visa</label>
+        <br />
+        <input type="radio" name="pm" id="master_card" value="master_card">
+        <label for="master_card">Master Card</label>
+        <br />
+        <input type="radio" name="pm" id="amex" value="amex">
+        <label for="amex">AmEx</label>
+        <br />
+        <input type="submit" value="Submit Form">
+    </form>
+
+
+    <script>
+        /*
+                function validateRadios() {
+            var radios = document.getElementsByName("r1");
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return true;
+                }
+            }
+            alert("Please check a payment method.");
+            return false;
+        }
+        */
+        function validateRadios(ename) {
+            var radios = document.getElementsByName(ename);
+            for (var radioButton = 0; radioButton < radios.length; radioButton++) {
+                if (radios[radioButton].checked) {
+                    window.alert('Done! Thank you')
+                    return true;
+                } // end if
+            } // end for loop 
+                        
+            alert("Please check a payment method.");
+            // changes its background color to yellow
+            radios.style.backgroundColor = "yellow";
+            return false;
+        } // end function
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotel-reservation-form</title>
+    <style>
+        input:focus {
+            background-color: yellow;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hotel Reservation Form</h1>
+    <form id="hotel_reservation" method="post" action="8-reservation-form-completed.html" autocomplete="off">
+        <fieldset>
+            <legend>Guest Personal Information</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="first_name">First Name*:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" size="20" maxlength="20" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="last_name">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" size="20" maxlength="20" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="address" size="30" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City</label>
+                    </td>
+                    <td>
+                        <input type="text" id="city" size="30" maxlength="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>State / ZipCode</label></td>
+                    <td>
+                        <label for="state">State: </label>
+                        <input type="text" id="state" size="2" maxlength="2" />
+                        <label for="zipcode">Zipcode:</label>
+                        <input type="text" id="zipcode" size="10" maxlength="10" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email Address:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" size="40" maxlength="40" placeholder="your_name@example.com" pattern="" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hotel Reservation</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>Hotels:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="hotel1" value="black_canyon" />
+                        <label for="hotel1">Black Canyon Royals</label>
+                        <br />
+                        <input type="checkbox" id="hotel2" value="mese_verde" />
+                        <label for="hotel2">Mesa Verde Pueblo</label>
+                        <br />
+                        <input type="checkbox" id="hotel3" value="rocky_mountain" />
+                        <label for="hotel3">Rocky Mountain Station</label>
+                        <br />
+                        <input type="checkbox" id="hotel4" value="sand_dunes" />
+                        <label for="hotel4">Sand Dunes Central</label>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="accommodations">Accommodations:</label>
+                    </td>
+                    <td>
+                        <select id="accommodations" multiple="multiple" size="3">
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="suite">Suite</option>
+                            <option value="luxury_suite">Luxury Suite</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="adults">Adults:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="adults" min="1" max="3" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="children">Children:</label>
+                    </td>
+                    <td>
+                        <input type="number" id="children" min="0" max="4" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number_of_nights">Number of nights</label>
+                    </td>
+                    <td>
+                        <select is="number_of_nights">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="arrival_date">Arrival date: </label>
+                    </td>
+                    <td>
+                        <input type="date" id="arrival_date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="departure_date">Departure date: </label>
+                    </td>
+                    <td>
+                        <input type="date" id="departure_date" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Payment Method:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="payment_method" id="visa" value="visa" />
+                        <label for="visa">Visa</label>
+                        <br />
+                        <input type="radio" name="payment_method" id="master_card" value="master_card" />
+                        <label for="master_card">Master Card</label>
+                        <br />
+                        <input type="radio" name="payment_method" id="american_express" value="american_express" />
+                        <label for="american_express">American Express</label>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="car_lease">Car Lease Services</label>
+                        <select id="car_lease">
+                            <optgroup label="Economic Cars">
+                                <option value="nissan">Nissan</option>
+                                <option value="kia">Kia</option>
+                            </optgroup>
+                            <optgroup label="Sport Cars">
+                                <option value="mercedes">Mercedes</option>
+                                <option value="bmw">BMW</option>
+                            </optgroup>
+                            <optgroup label="Luxury Cars">
+                                <option value="audi">Audi</option>
+                                <option value="licoln">Lincoln</option>
+                                <option value="ford">Ford</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="feedback">Feedback and Comments: </label>
+                    </td>
+                    <td>
+                        <textarea id="feedback" cols="40" rows="4"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <progress max="100" value="60"></progress>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="color_picker">Choose your favorite color:</label>
+                    </td>
+                    <td>
+                        <input type="color" id="color_picker" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" id="submit_reservation" value="Submit Your Form" />
+                        <input type="reset" id="clear_form" value="Clear Your Form" />
+
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+
+
+        
+    </form>
+</body>
+
+</html>

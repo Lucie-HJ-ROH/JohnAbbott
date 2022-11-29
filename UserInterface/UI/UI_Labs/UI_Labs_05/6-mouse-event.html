@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outClass {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            color: #fff;
+            background-color: #00f;
+        }
+
+        .overClass {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            color: #00f;
+            background-color: #fff;
+        }
+    </style>
+    <script>
+        function rollOn() {
+            if(window.event.srcElement.className == 'outClass') {
+                window.event.srcElement.className = 'overClass';
+            }
+        } // end function rollOn
+
+
+        function rollOff() {
+            if(window.event.srcElement.className == 'overClass') {
+                window.event.srcElement.className = 'outClass';
+            }
+        } // end function rollOn
+
+        // object_name.event_name = event_handler
+        document.onmouseover = rollOn;
+        document.onmouseout = rollOff;
+
+        // test it with event.target
+        // test it with getElementByClassName
+    </script>
+</head>
+
+<body>
+    <p>
+        <span class="outClass">Home</span>
+        <span class="outClass">Products</span>
+        <span class="outClass">Services</span>
+        <span class="outClass">Download</span>
+        <span class="outClass">About</span>
+        <span class="outClass">Contact</span>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Arrow Function</title>
+    <script>
+
+        // function 1
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // convert function 1 to arrow function
+        let theSum = (a, b) => a + b;
+
+        // function 2
+        function isPositive(number) {
+            return number >= 0;
+        }
+
+        // convert function 2 to arrow function
+        let thePositive = number => number >= 0;
+
+        // function 3
+        function randomNumber() {
+            return Math.random();
+        }
+
+        // convert function 3 to arrow function
+        let theRandomNumber = () => Math.random();
+
+        document.addEventListener('click', () => console.log('click'));
+    </script>
+    <script>
+
+        // using this keyword with arrow function 
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+
+         printNameFunction() {
+            setTimeout(function () {
+                console.log('Named Function: ' + this.name)
+            }, 100);
+        }
+
+
+         printNameArrow() {
+            setTimeout(() => {
+                console.log('Arrow function: ' + this.name)
+            }, 1000);
+        }
+    }
+        let person = new Person('John');
+        person.printNameFunction();
+        person.printNameArrow()
+        console.log(this.name);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
